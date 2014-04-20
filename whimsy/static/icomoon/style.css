@@ -1,0 +1,127 @@
+@font-face {
+	font-family: 'icomoon';
+	src:url('/static/icomoon/icomoon.eot?v=5');
+	src:url('/static/icomoon/icomoon.eot?#iefix?v=5') format('embedded-opentype'),
+		url('/static/icomoon/icomoon.svg#icomoon') format('svg'),
+		url('/static/icomoon/icomoon.woff?v=5') format('woff'),
+		url('/static/icomoon/icomoon.ttf?v=5') format('truetype');
+	font-weight: normal;
+	font-style: normal;
+}
+
+/* Use the following CSS code if you want to use data attributes for inserting your icons */
+[data-icon]:before {
+	font-family: 'icomoon';
+	content: attr(data-icon);
+	speak: none;
+	font-weight: normal;
+	font-variant: normal;
+	text-transform: none;
+	line-height: 1;
+	-webkit-font-smoothing: antialiased;
+        -webkit-text-stroke: 1px;
+}
+
+/* Use the following CSS code if you want to have a class per icon */
+/*
+Instead of a list of all class selectors,
+you can use the generic selector below, but it's slower:
+[class*="icon-"] {
+*/
+.icon-facebook, .icon-twitter, .icon-linkedin, .icon-instagram, .icon-firefox, .icon-IE, .icon-opera, .icon-safari, .icon-github, .icon-mail, .icon-cogs, .icon-books, .icon-graduate, .icon-file-word, .icon-file-pdf, .icon-calendar, .icon-envelope, .icon-twitter-2, .icon-github-2, .icon-wrench, .icon-hammer, .icon-link, .icon-busy, .icon-tie, .icon-desklamp, .icon-visitor, .icon-briefcase, .icon-3d-glasses, .icon-chrome {
+	font-family: 'icomoon';
+	speak: none;
+	font-style: normal;
+	font-weight: normal;
+	font-variant: normal;
+	text-transform: none;
+	line-height: 1;
+	-webkit-font-smoothing: antialiased;
+}
+.icon-facebook:before {
+	content: "\e000";
+}
+.icon-twitter:before {
+	content: "\e001";
+}
+.icon-linkedin:before {
+	content: "\e002";
+}
+.icon-instagram:before {
+	content: "\e005";
+}
+.icon-firefox:before {
+	content: "\e006";
+}
+.icon-IE:before {
+	content: "\e007";
+}
+.icon-opera:before {
+	content: "\e008";
+}
+.icon-safari:before {
+	content: "\e009";
+}
+.icon-github:before {
+	content: "\e00a";
+}
+.icon-mail:before {
+	content: "\e003";
+}
+.icon-cogs:before {
+	content: "\e004";
+}
+.icon-books:before {
+	content: "\e00b";
+}
+.icon-graduate:before {
+	content: "\e00c";
+}
+.icon-file-word:before {
+	content: "\e00d";
+}
+.icon-file-pdf:before {
+	content: "\e00e";
+}
+.icon-calendar:before {
+	content: "\f073";
+}
+.icon-envelope:before {
+	content: "\f003";
+}
+.icon-twitter-2:before {
+	content: "\e00f";
+}
+.icon-github-2:before {
+	content: "\f09b";
+}
+.icon-wrench:before {
+	content: "\e010";
+}
+.icon-hammer:before {
+	content: "\e011";
+}
+.icon-link:before {
+	content: "\e012";
+}
+.icon-busy:before {
+	content: "\e013";
+}
+.icon-tie:before {
+	content: "\2040";
+}
+.icon-desklamp:before {
+	content: "\f412";
+}
+.icon-visitor:before {
+	content: "\f097";
+}
+.icon-briefcase:before {
+	content: "\e014";
+}
+.icon-3d-glasses:before {
+	content: "\e015";
+}
+.icon-chrome:before {
+	content: "\e016";
+}

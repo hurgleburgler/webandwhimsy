@@ -1,12 +1,8 @@
-from django.conf.urls import patterns, include, url
-
-from django.contrib import admin
-admin.autodiscover()
+from django.conf.urls import patterns
+from django.views.generic import TemplateView
 
 urlpatterns = patterns('',
-    # Examples:
-    # url(r'^$', 'whimsy.views.home', name='home'),
-    # url(r'^blog/', include('blog.urls')),
-
-    url(r'^admin/', include(admin.site.urls)),
+    ('^interactive$', TemplateView.as_view(template_name='interactive.html')),
+    ('^standard$', TemplateView.as_view(template_name='standard.html')),
+    ('^$', TemplateView.as_view(template_name='home.html')),
 )

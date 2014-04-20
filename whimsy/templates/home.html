@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta http-equiv="Content-Type" content="text/html;charset=utf-8" >
+
+    <!-- Le styles -->
+    <link href="/static/js/bootstrap/css/bootstrap.css" rel="stylesheet" type='text/css' />
+    <link href="/static/js/bootstrap/css/bootstrap-responsive.css" rel="stylesheet" type='text/css' />
+    <link href="/static/css/ui.timeline.css" rel="stylesheet" type='text/css' />
+    <link href="/static/css/jqcloud.css" rel="stylesheet" type='text/css' />
+    <link href="/static/icomoon/style.css?v=5" rel="stylesheet" type='text/css' />
+    <link href='http://fonts.googleapis.com/css?family=Josefin+Sans:600' rel='stylesheet' type='text/css' />
+    <link href='http://fonts.googleapis.com/css?family=Life+Savers:700' rel='stylesheet' type='text/css' />
+
+    <link rel="stylesheet" type="text/css" href="/static/css/standard_print.min.css" media="print" />
+    <link rel="stylesheet" type="text/css" href="/static/css/standard.min.css" media="screen" />
+    <link rel="stylesheet" type="text/css" href="/static/css/whimsy.min.css" media="screen" />
+
+    <title>Web and Whimsy</title>
+
+  </head>
+
+  <body>
+    <div id="wrap">
+      <div class="navbar navbar-fixed-top">
+        <div class="navbar-inner">
+          <div class="container">
+            <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </a>
+            <a class="brand" href="">Diana R. Whitten</a>
+            <div class="nav-collapse">
+              <ul class="nav">
+                <li class="active"><a id="interactive" href="">Interactive</a></li>
+                <li><a id="standard" href="">Standard</a></li>
+                <li class="dropdown">
+                  <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                       Contact Me! 
+                  </a>
+                  <ul class="dropdown-menu">
+                    <li><a href="mailto:bubasti@gmail.com"><span class="icomoon icon-envelope" aria-hidden="true"></span><span>Email Me!</span></a></li>
+                    <li><a href="https://twitter.com/hurgleburgler"><span class="icomoon icon-twitter-2" aria-hidden="true"></span><span>Tweet Me!</span></a></li>
+                    <li><a href="https://www.facebook.com/bubasti217"><span class="icomoon icon-facebook" aria-hidden="true"></span><span>Stalk Me!</span></a></li>
+                    <li><a href="https://www.linkedin.com/pub/diana-whitten/75/87b/297"><span class="icomoon icon-linkedin" aria-hidden="true"></span><span>Connect with Me!</span></a></li>
+                    <!--<li><a href=""><span class="icomoon icon-github-2" aria-hidden="true"></span><span>Clone Me!</span></a></li>-->
+                  </ul>
+                </li><!-- dropdown -->
+              </ul><!-- /.nav -->
+            </div><!--/.nav-collapse -->
+          </div><!-- /.container -->
+        </div><!-- /.navbar-inner -->
+      </div><!-- /.navbar -->
+  
+  
+      <div class="container">
+        <div id="page-contents">
+        </div>
+      </div>
+      <div id="push"></div>
+    </div>
+  
+    <footer>
+      <span>Designed and Built by <a href="http://webandwhimsy.com">Diana Whitten</a>.</span>
+      <span class='browsers pull-right'>Tested on: 
+        <span title="v.21" class="icomoon icon-firefox" aria-hidden="true"></span>
+        <span title="v.9/10" class="icomoon icon-IE" aria-hidden="true"></span>
+        <span title="v.27" class="icomoon icon-chrome" aria-hidden="true"></span>
+      </span>
+    </footer>
+
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+    <script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.10.3/jquery-ui.min.js"></script>
+    <script src="/static/js/bootstrap/js/bootstrap.min.js"></script>
+    <script src="/static/js/ui.timeline.js"></script>
+    <script src="/static/js/jqcloud-1.0.4.min.js"></script>
+    
+    <script>
+      $(document).ready(function() {
+  
+        $('.browsers .icomoon').tooltip();
+ 
+        $('ul.nav > li > a').click(function(e) {
+          e.preventDefault();
+    
+          var $this = $(this);
+          var this_id = $this.attr('id');
+    
+          if (this_id) {
+            $('ul.nav li.active').removeClass('active');
+            $this.parent().addClass('active');
+            $('#page-contents').empty().load('/' + this_id, function(e) {
+              if (typeof(window[this_id + "_init"]) === 'function') {
+                window[this_id + "_init"]();
+              }
+            });
+          }
+        });
+    
+        $('a#interactive').click();
+        //$('a#standard').click();
+    
+      });
+    </script>
+
+  </body>
+</html>
