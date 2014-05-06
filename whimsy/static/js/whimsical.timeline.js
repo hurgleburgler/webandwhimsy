@@ -68,7 +68,7 @@ $(function() {
         .attr('colspan', '2')
       );
 
-      for (var ii = 0; ii < this.options.events.length; ii++) {
+      for (var ii=0; ii<this.options.events.length; ii++) {
         this._addEvent(this.options.events[ii]);
       }
 
@@ -160,7 +160,10 @@ $(function() {
             html: true,
             trigger: this.options.tipTrigger,
           })
-          .data('event', event)
+          .data({
+            'event': event,
+            'id': event.id
+          })
           .attr('id', (event.id ? 'event-' + event.id : 'event'))
           .addClass('timeline-event' + (event.class ? ' ' + event.class : ''))
       );
@@ -171,21 +174,7 @@ $(function() {
       months -= d1.getMonth() + 1;
       months += d2.getMonth();
       return (months <= 0 ? 0 : months) + 1;
-    },
-    // _setOptions is called with a hash of all options that are changing
-    // always refresh when changing options
-    _setOptions: function() {
-      // _super and _superApply handle keeping the right this-context
-      this._superApply( arguments );
-    },
-  
-    // _setOption is called for each individual option that is changing
-    _setOption: function( key, value ) {
-      this._super( key, value );
-      //this._refresh();
-    },
-    //_refresh: function() {
-    //}
+    }
   });
 });
 

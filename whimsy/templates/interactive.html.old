@@ -1,0 +1,620 @@
+
+          <div class="row top-row">
+            <div class="span6">
+              <h1 class="text-center" id="experience">
+                <span class="icomoon dim-icon icon-desklamp" aria-hidden="true"></span>
+                Experience 
+                <span class="icomoon dim-icon icon-visitor" aria-hidden="true"></span>
+              </h1>
+
+              <div id="myCarousel" class="carousel slide">
+                <div class="carousel-inner">
+
+                  <div class="active item paper-style">
+                    <div class="row work-history-title">
+                      <span class="work-history-job-title">Senior Software Engineer</span>
+                      <span class="work-history-dates">01/13 - Present</span>
+                    </div>
+
+                    <div class="row work-company">
+                      <div class="span3">MindTouch Incorporated<a href="http://www.mindtouch.com"><span class="icomoon icon-link" aria-hidden="true"></span></a></div>
+                      <div class="text-right">User Experience</div>
+                    </div>
+                    <div class="row">
+                      <div class="span6">
+                        <ul class="work-details">
+                          <li>Senior Member of MindTouch’s small front end team, whose daily role is implementing fixes to a legacy codebase and surgically enhancing existing codebase with modern web advancements while also interfacing with Customer Success team to create new and exciting user experiences</li>
+                          <li>Created a library of reusable widgets using jQueryUI’s Widget Factory Facade design pattern to allow for ease of maintenance and plug-and-play capabilities for 3rd party plugins</li>
+                        </ul>
+                      </div>
+                    </div>
+                    <div class="paper-style_tape"></div>
+                  </div>
+
+
+                  <div class="item paper-style">
+                    <div class="row work-history-title">
+                      <span class="work-history-job-title">User Experience Engineer</span>
+                      <span class="work-history-dates">01/13 - 08/13</span>
+                    </div>
+
+                    <div class="row work-company">
+                      <div class="span3">Rincon Research Corporation<a href="http://www.rincon.com"><span class="icomoon icon-link" aria-hidden="true"></span></a></div>
+                      <div class="text-right">Integrated Solutions</div>
+                    </div>
+                    <div class="row">
+                      <div class="span6">
+                        <ul class="work-details">
+                          <li>Designed and created a responsive web Front-End using advanced JavaScript techniques and leveraging Twitter's Bootstrap, jQuery, JSON through AJAX</li>
+                          <li>Designed and created a responsive web Front-End, leveraging Bootstrap, jQuery and JSON for satellite downlink archiving software</li>
+                          <li>Created and maintained a Kickstart repository for fast setup of machines at various global sites using Cobbler</li>
+                        </ul>
+                      </div>
+                    </div>
+                    <div class="paper-style_tape"></div>
+                  </div>
+
+
+                  <div class="item paper-style">
+                    <div class="row work-history-title">
+                      <span class="work-history-job-title">Full Stack Developer</span>
+                      <span class="work-history-dates">01/11 - 12/12</span>
+                    </div>
+
+                    <div class="row work-company">
+                      <div class="span3">Rincon Research Corporation<a href="http://www.rincon.com"><span class="icomoon icon-link" aria-hidden="true"></span></a></div>
+                      <div class="text-right">Research & Technology</div>
+                    </div>
+                    <div class="row">
+                      <div class="span6">
+                        <ul class="work-details">
+                          <li>Full stack development of several web applications: Implemented backend from the ground up, legacy database integration, and front end user interface utilizing Django, PostgreSQL/PostGIS, HTML/HTML5, CSS/CSS3, jQuery/jQuery UI</li>
+                          <li>Designed and implemented several reusable jQuery UI Widget Factory plugins</li>
+                          <li>Member of a team that maintained and enhanced an established multi-server cluster software framework written in Python and C++</li>
+                        </ul>
+                      </div>
+                    </div>
+                    <div class="paper-style_tape-straight"></div>
+                  </div>
+
+
+                  <div class="item paper-style">
+                    <div class="row work-history-title">
+                      <span class="work-history-job-title">Software Engineer</span>
+                      <span class="work-history-dates">09/07 - 12/10</span>
+                    </div>
+                    <div class="row work-company">
+                      <div class="span3">Rincon Research Corporation<a href="http://www.rincon.com"><span class="icomoon icon-link" aria-hidden="true"></span></a></div>
+                      <div class="text-right">Applied Technology</div>
+                    </div>
+                    <div class="row">
+                      <div class="span6">
+                        <ul class="work-details">
+                          <li>Team lead of a small team who conceived, analyzed, designed, implemented, tested, deployed, and maintained software-based solutions for modern geolocation systems in support of national security defense</li>
+                          <li>Aided in algorithm development, hardware control, GUI design, and database maintenance and development</li>
+                          <li>Productive member during 3 overseas trips, ending in successful deliveries</li>
+                        </ul>
+                      </div>
+                    </div>
+                    <div class="paper-style_tape"></div>
+                  </div>
+
+
+                  <div class="item paper-style">
+                    <div class="row work-history-title">
+                      <span class="work-history-job-title">Software Test Engineer</span>
+                      <span class="work-history-dates">08/06 - 9/07</span>
+                    </div>
+                    <div class="row work-company">
+                      <div class="span3">Ventana Medical Systems<a href="http://www.ventana.com"><span class="icomoon icon-link" aria-hidden="true"></span></a></div>
+                      <div class="text-right">Advanced Staining Software</div>
+                    </div>
+                    <div class="row">
+                      <div class="span6">
+                        <ul class="work-details">
+                          <li>Authored and executed system test plans for automated tissue staining instrument software under the FDA's General Principles of Software Validation</li>
+                          <li>Created automated MS templates for generating test documents with VBA, including Test Plans and Protocols, Validation Summary Reports & Release Memos</li>
+                          <li>Creation and maintenance of collaborative team documentation through a Wiki web resource on a WIMP installation (Windows 2003, IIS, MySQL & PHP) </li>
+                        </ul>
+                      </div>
+                    </div>
+                    <div class="paper-style_tape-straight"></div>
+                  </div>
+
+
+                  <div class="item paper-style">
+                    <div class="row work-history-title">
+                      <span class="work-history-job-title">Software Engineer</span>
+                      <span class="work-history-dates">09/05 - 7/06</span>
+                    </div>
+                    <div class="row work-company">
+                      <div class="span2">IBM Corporation<a href="http://www.ibm.com"><span class="icomoon icon-link" aria-hidden="true"></span></a></div>
+                      <div class="text-right">Build Automation & Tools Team</div>
+                    </div>
+                    <div class="row">
+                      <div class="span6">
+                        <ul class="work-details">
+                          <li>Administered the IBM Configuration Management Version Control repository</li>
+                          <li>Served as the team's focal point for the DS-8000 Enterprise Storage Subsystem while providing support to development, test and technical project leads for CMVC, DFS and GSA</li>
+                          <li>Extended and automated a product build system used to package and deliver software</li>
+                        </ul>
+                      </div>
+                    </div>
+                    <div class="paper-style_tape"></div>
+                  </div>
+
+
+                 <div class="item paper-style">
+                    <div class="row work-history-title">
+                      <span class="work-history-job-title">Software Engineer</span>
+                      <span class="work-history-dates">06/04 - 08/05</span>
+                    </div>
+                    <div class="row work-company">
+                      <div class="span3">IBM Corporation<a href="http://www.ibm.com"><span class="icomoon icon-link" aria-hidden="true"></span></a></div>
+                      <div class="text-right">Code Integration Test</div>
+                    </div>
+                    <div class="row">
+                      <div class="span6">
+                        <ul class="work-details">
+                          <li>Authored and executed DS-8000 ESS test plans for hardware/software integration functions for the Flexible Service Processor, pSeries Hypervisor and the xSeries Hardware Management Console</li>
+                          <li>Served as the Tucson DS-8000 ESS Code Integration Test representative between product development/testing to San Jose, Austin, Rochester and Hungary sites</li>
+                          <li>2 Bravo Awards for assignments at the manufacturing plant in Vac, Hungary</li>
+                        </ul>
+                      </div>
+                    </div>
+                    <div class="paper-style_tape-straight"></div>
+                  </div>
+
+
+                  <div class="item paper-style">
+                    <div class="row work-history-title">
+                      <span class="work-history-job-title">Co-op / Early Verification Tester</span>
+                      <span class="work-history-dates">01/03 - 08/03</span>
+                    </div>
+                    <div class="row work-company">
+                      <div class="span3">IBM Corporation<a href="http://www.ibm.com"><span class="icomoon icon-link" aria-hidden="true"></span></a></div>
+                      <div class="text-right">Baseline Team</div>
+                    </div>
+                    <div class="row">
+                      <div class="span6">
+                        <ul class="work-details">
+                          <li>Debugged and repaired hardware problems and Performed failure analysis</li>
+                          <li>Tested hardware and software capabilities of the IBM 800 and F model Enterprise Storage Servers</li>
+                        </ul>
+                      </div>
+                    </div>
+                    <div class="paper-style_tape"></div>
+                  </div>
+
+
+                  <div class="item paper-style">
+                    <div class="row work-history-title">
+                      <span class="work-history-job-title">System Administrator</span>
+                      <span class="work-history-dates">09/03 - 05/04</span>
+                    </div>
+                    <div class="row work-company">
+                      <div class="span2">NMSU<a href="http://www.nmsu.edu"><span class="icomoon icon-link" aria-hidden="true"></span></a></div>
+                      <div class="text-right">Information & Communication Technologies</div>
+                    </div>
+                    <div class="row">
+                      <div class="span6">
+                        <ul class="work-details">
+                          <li>Packaged software and built system images for campus wide distribution</li>
+                          <li>Troubleshot, repaired and installed hardware/software components</li>
+                        </ul>
+                      </div>
+                    </div>
+                    <div class="paper-style_tape-straight"></div>
+                  </div>
+
+
+                  <div class="item paper-style">
+                    <div class="row work-history-title">
+                      <span class="work-history-job-title">Computer Operations Group</span>
+                      <span class="work-history-dates">08/01 - 12/02</span>
+                    </div>
+                    <div class="row work-company">
+                      <div class="span2">NMSU<a href="http://www.nmsu.edu"><span class="icomoon icon-link" aria-hidden="true"></span></a></div>
+                      <div class="text-right">Mathematical Sciences Department</div>
+                    </div>
+                    <div class="row">
+                      <div class="span6">
+                        <ul class="work-details">
+                          <li>Administrated the Mathematics Department lab of 40+ computers and servers</li>
+                          <li>Troubleshot, repaired and installed hardware/software components</li>
+                          <li>Provided overall computer support for Department Professors and Graduate Students</li>
+                        </ul>
+                      </div>
+                    </div>
+                    <div class="paper-style_tape"></div>
+                  </div>
+                </div>
+                <ol class="carousel-indicators">
+                  <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+                  <li data-target="#myCarousel" data-slide-to="1"></li>
+                  <li data-target="#myCarousel" data-slide-to="2"></li>
+                  <li data-target="#myCarousel" data-slide-to="3"></li>
+                  <li data-target="#myCarousel" data-slide-to="4"></li>
+                  <li data-target="#myCarousel" data-slide-to="5"></li>
+                  <li data-target="#myCarousel" data-slide-to="6"></li>
+                  <li data-target="#myCarousel" data-slide-to="7"></li>
+                  <li data-target="#myCarousel" data-slide-to="8"></li>
+                </ol>
+                <a class="carousel-control left" href="#myCarousel" data-slide="prev"><span>&lsaquo;</span></a>
+                <a class="carousel-control right" href="#myCarousel" data-slide="next"><span>&rsaquo;</span></a>
+              </div>
+              <h1 class="text-center" id="education-title">
+                <span class="icomoon dim-icon icon-graduate" aria-hidden="true"></span>
+                Education 
+                <span class="icomoon dim-icon icon-books" aria-hidden="true"></span>
+              </h1>
+              <div class="span6 text-center" id="education">
+                <strong><h4 class="text-center"><a href="http://www.nmsu.edu">New Mexico State University</a></h4></strong>
+                <h5 class="text-center">Bachelor of Science Degree</h5>
+                <h5 class="text-center">Double Major: <a href="http://catalog.nmsu.edu/previous-years/undergraduate/Undergraduate_Catalog_03_04/ch3/cs.html">Computer Science</a> & <a href="http://catalog.nmsu.edu/previous-years/undergraduate/Undergraduate_Catalog_03_04/ch3/math.html">Mathematics</a></h5>
+                <h5 class="text-center">Supplementary Major: <a href="http://www.math.nmsu.edu/supmajor2.html">Applied Mathematics</a></h5>
+                <h5 class="text-center">Graduated May, 2004</h5>
+              </div>
+
+            </div>
+
+            <div class="span6">
+              <h1 class="text-center" id="skill-title">
+                <span class="icomoon dim-icon icon-wrench" aria-hidden="true"></span>
+                Skills
+                <span class="icomoon dim-icon icon-hammer" aria-hidden="true"></span>
+              </h1>
+              <center><div id="skillcloud"></div></center>
+            </div>
+          </div>
+          <div class="row">
+            <div class="span12">
+              <h1 class="text-center" id="history">
+                <span class="icomoon dim-icon icon-calendar" aria-hidden="true"></span>
+                Timeline 
+                <span class="icomoon dim-icon icon-calendar" aria-hidden="true"></span>
+              </h1>
+              <div id="myTimeline"></div>
+            </div>
+          </div>
+
+          <script>
+            var interactive_init = function() {
+              $(window).resize(function() {
+                $('.timeline-event')
+                  .tooltip('show');
+              });
+
+              var skill_hash = {};
+              var skills = [
+                {text: "Python", weight: 10, link: "http://www.python.org"},
+                {text: "jQuery", weight: 10, link: "http://jquery.com"},
+                {text: "Django", weight: 9, link: "https://www.djangoproject.com/"},
+                {text: "JavaScript", weight: 8, link: "http://en.wikipedia.org/wiki/JavaScript"},
+                {text: "vim", weight: 8, link: "http://www.vim.org/"},
+                {text: "Firebug", weight: 8, link: "https://getfirebug.com/whatisfirebug"},
+                {text: "jQueryUI", weight: 6, link: "http://jqueryui.com"},
+                {text: "Bootstrap", weight: 6, link: "http://twitter.github.io/bootstrap/"},
+                {text: "Linux", weight: 8, link: "http://www.linux.org/"},
+                {text: "CSS3", weight: 6, link: "http://www.w3.org/Style/CSS/Overview.en.html"},
+                {text: "HTML5", weight: 6, link: "http://www.w3.org/html/"},
+                {text: "JSON", weight: 6, link: "http://en.wikipedia.org/wiki/JSON"},
+                {text: "Sqlite", weight: 6, link: "http://www.sqlite.org/"},
+                {text: "XML", weight: 6, link: "http://www.w3.org/XML/"},
+                {text: "git", weight: 6, link: "http://git-scm.com/"},
+                {text: "Red Hat", weight: 5, link: "http://www.redhat.com/"},
+                {text: "Ubuntu", weight: 5, link: "http://www.ubuntu.com/"},
+                {text: "Open Layers", weight: 5, link: "http://openlayers.org/"},
+                {text: "PostgreSQL", weight: 5, link: "http://www.postgresql.org/"},
+                {text: "C", weight: 5, link: "http://en.wikipedia.org/wiki/C_%28programming_language%29"},
+                {text: "C++", weight: 5, link: "https://en.wikipedia.org/wiki/C%2B%2B"},
+                {text: "SVG", weight: 5, link: "http://www.w3.org/Graphics/SVG/"},
+                {text: "Office", weight: 5, link: "http://office.microsoft.com/en-us/"},
+                {text: "Cobbler", weight: 5, link: "http://www.cobblerd.org/"},
+                {text: "Windows", weight: 5, link: "http://windows.microsoft.com/en-us/windows/home"},
+                {text: "Underscore", weight: 5, link: "http://underscorejs.org/"},
+                {text: "MySQL", weight: 4, link: "http://www.mysql.com/"},
+                {text: "Mercurial", weight: 4, link: "http://mercurial.selenic.com/"},
+                {text: "Illustrator", weight: 4, link: "http://www.adobe.com/products/illustrator.html"},
+                {text: "Photoshop", weight: 4, link: "http://www.adobe.com/products/photoshop.html"},
+                {text: "Icon Fonts", weight: 4, link: "http://www.google.com/fonts/"},
+                {text: "Bash", weight: 4, link: "http://www.gnu.org/software/bash/"},
+                {text: "Csh", weight: 4, link: "http://en.wikipedia.org/wiki/C_shell"},
+                {text: "xMidas", weight: 4, link: "http://www.rincon.com"},
+                {text: "CSS", weight: 4, link: "http://www.w3.org/Style/CSS/Overview.en.html"},
+                {text: "HTML", weight: 4, link: "http://www.w3.org/html/"},
+                {text: "MongoDB", weight: 3, link: "http://www.mongodb.org/"},
+                {text: "suds", weight: 3, link: "https://fedorahosted.org/suds/"},
+                {text: "Zenoss", weight: 3, link: "http://community.zenoss.org/index.jspa"},
+                {text: "VB for Apps", weight: 3, link: "http://en.wikipedia.org/wiki/Visual_Basic_for_Applications"},
+                {text: "AIX", weight: 3, link: "http://en.wikipedia.org/wiki/IBM_AIX"},
+                {text: "Lotus Notes", weight: 3, link: "http://www-03.ibm.com/software/products/us/en/ibmnotes"},
+                {text: "Java", weight: 3, link: "http://www.java.com/en/"},
+                {text: "Delphi", weight: 3, link: "http://www.embarcadero.com/products/delphi"},
+                {text: "PHP", weight: 3, link: "http://us.php.net/"},
+                {text: "Perl", weight: 3, link: "http://www.perl.org/"},
+                {text: "Oracle", weight: 3, link: "http://www.oracle.com/us/products/database/overview/index.html"},
+                {text: "OSX", weight: 4, link: "http://www.apple.com/osx"},
+                {text: "CMVC", weight: 3, link: "http://en.wikipedia.org/wiki/IBM_Configuration_Management_Version_Control_%28CMVC%29"},
+                {text: "SVN", weight: 3, link: "http://subversion.apache.org/"},
+
+              ];
+
+              var $myCarousel = $('#myCarousel');
+              $myCarousel.carousel({interval: 90000});
+              $myCarousel.carousel('cycle');
+
+              $('#myTimeline').timeline({
+                tipTrigger: 'manual',
+                events: [
+                  {
+                    id: 10,
+                    range: [new Date(2001, 8-1, 1), new Date(2003, 1-1, 1)],
+                    tip: ['NMSU', 'Sys Admin'],
+                    class: 'job-nmsu-math',
+                    skills: [
+                      "vim",
+                      "Linux",
+                      "CSS",
+                      "HTML",
+                      "C",
+                      "C++",
+                      "Office",
+                      "Windows",
+                      "Bash",
+                      "Csh",
+                    ],
+                  },
+                  {
+                    id: 8,
+                    range: [new Date(2003, 1-1, 1), new Date(2003, 9-1, 1)],
+                    tip: ['IBM', 'Co-op'],
+                    class: 'job-ibm-coop',
+                    skills: [
+                      "vim",
+                      "AIX",
+                      "Office",
+                      "Windows",
+                      "Lotus Notes",
+                      "CMVC",
+                      "Bash",
+                      "Csh",
+                      "Perl",
+                    ],
+                  },
+                  {
+                    id: 9,
+                    range: [new Date(2003, 9, 1), new Date(2004, 6, 1)],
+                    tip: ['NMSU', 'Sys Admin'],
+                    class: 'job-nmsu-ict',
+                    skills: [
+                      "Office",
+                      "Windows",
+                    ],
+                  },
+                  {
+                    id: 7,
+                    range: [new Date(2004, 6, 1), new Date(2005, 9, 1)],
+                    tip: ['IBM', 'Test Engineer'],
+                    class: 'job-ibm-cit',
+                    skills: [
+                      "vim",
+                      "AIX",
+                      "Office",
+                      "Windows",
+                      "CMVC",
+                      "Lotus Notes",
+                      "CMVC",
+                      "Bash",
+                      "Csh",
+                      "Perl",
+                    ],
+                  },
+                  {
+                    id: 6,
+                    range: [new Date(2005, 9, 1), new Date(2006, 8, 1)],
+                    tip: ['IBM', 'Software Engineer'],
+                    class: 'job-ibm-bat',
+                    skills: [
+                      "vim",
+                      "Office",
+                      "AIX",
+                      "Windows",
+                      "CMVC",
+                      "Lotus Notes",
+                      "CMVC",
+                      "Bash",
+                      "Csh",
+                      "Perl",
+                    ],
+                  },
+                  {
+                    id: 5,
+                    range: [new Date(2006, 8, 1), new Date(2007, 9, 1)],
+                    tip: ['Ventana', 'Test Engineer'],
+                    class: 'job-ventana',
+                    skills: [
+                      "Office",
+                      "Windows",
+                      "VB for Apps",
+                      "Delphi",
+                    ],
+                  },
+                  {
+                    id: 4,
+                    range: [new Date(2007, 9, 1), new Date(2011, 1, 1)],
+                    tip: ['Rincon Research', 'Software Engineer'],
+                    class: 'job-rincon-gatorraid',
+                    skills: [
+                      "vim",
+                      "Linux",
+                      "HTML",
+                      "Red Hat",
+                      "C++",
+                      "Office",
+                      "Windows",
+                      "SVN",
+                      "Bash",
+                      "Java",
+                      "PHP",
+                      "Oracle",
+                    ],
+                  },
+                  {
+                    id: 3,
+                    range: [new Date(2011, 1, 1), new Date(2013, 1, 1)],
+                    tip: ['Rincon Research', 'Full Stack Developer'],
+                    class: 'job-rincon-atraa',
+                    skills: [
+                      "Python",
+                      "jQuery",
+                      "Django",
+                      "JavaScript",
+                      "vim",
+                      "Firebug",
+                      "jQueryUI",
+                      "Bootstrap",
+                      "Linux",
+                      "CSS",
+                      "HTML",
+                      "JSON",
+                      "XML",
+                      "Red Hat",
+                      "Open Layers",
+                      "PostgreSQL",
+                      "C++",
+                      "SVG",
+                      "Mercurial",
+                      "Illustrator",
+                      "Photoshop",
+                      "Icon Fonts",
+                      "Bash",
+                      "Csh",
+                      "xMidas",
+                      "MongoDB",
+                      "suds",
+                    ],
+                  },
+                  {
+                    id: 2,
+                    range: [new Date(2013, 1, 1), new Date(2013,8,31)],
+                    tip: ['Rincon Research', 'UX Engineer'],
+                    class: 'job-rincon-brik',
+                    skills: [
+                      "Python",
+                      "jQuery",
+                      "JavaScript",
+                      "vim",
+                      "Firebug",
+                      "jQueryUI",
+                      "Bootstrap",
+                      "Linux",
+                      "CSS",
+                      "HTML",
+                      "JSON",
+                      "Sqlite",
+                      "XML",
+                      "Red Hat",
+                      "SVG",
+                      "git",
+                      "Cobbler",
+                      "Illustrator",
+                      "Icon Fonts",
+                      "SVN",
+                      "Bash",
+                      "Csh",
+                    ],
+                  },
+                  {
+                    id: 1,
+                    range: [new Date(2013, 9, 1), new Date()],
+                    tip: ['MindTouch', 'Senior Engineer'],
+                    class: 'job-mindtouch',
+                    skills: [
+                      "jQuery",
+                      "JavaScript",
+                      "vim",
+                      "Firebug",
+                      "jQueryUI",
+                      "Underscore",
+                      "CSS3",
+                      "JSON",
+                      "XML",
+                      "OSX",
+                      "HTML5",
+                      "git",
+                      "Icon Fonts",
+                      "Bash",
+                    ],
+                  },
+                ],
+                tipFormatter: function(event) {
+                  if (event.tip) {
+                    return '<div class="event-tip" id="event-' + event.id + '-tip">'+event.tip[0]+'</div><div>'+event.tip[1]+'</div>'
+                  }
+                },
+                afterCreate: function(e) {
+                  $(this).find('tr.timeline-events')
+                    .hover(
+                      function(e) {
+                      },
+                      function(e) {
+                        if (!$.isEmptyObject(skill_hash)) {
+                          for (var ii = 0; ii < Object.keys(skill_hash).length; ii++) {
+                            skill_hash[Object.keys(skill_hash)[ii]].removeClass('dim');
+                          }
+                          $(this).parents('.dimmed').removeClass('dimmed');
+                        }
+                      }
+                    );
+
+                  $(this).find('.timeline-event')
+                    .tooltip('show')
+                    .click(function(e) {
+                      var this_event_num = Number($(this).attr('id').split('event-')[1]) - 1;
+                      if ($.isNumeric(this_event_num)) {
+                        $('#myCarousel').carousel(this_event_num);
+                      }
+                    })
+                    .hover(
+                      function(e) {
+                        if ($(this).parents('.dimmed').length == 0 && !$.isEmptyObject(skill_hash)) {
+                          for (var ii = 0; ii < Object.keys(skill_hash).length; ii++) {
+                            skill_hash[Object.keys(skill_hash)[ii]].addClass('dim');
+                          }
+                          $(this).parents('#myTimeline').addClass('dimmed');
+                        }
+
+                        var my_skills = $(this).data('event').skills;
+                        if (!$.isEmptyObject(skill_hash) && my_skills) {
+                          for (var ii = 0; ii < my_skills.length; ii++) {
+                            skill_hash[my_skills[ii]].removeClass('dim');
+                          }
+                        }
+                      },
+                      function(e) {
+                        var my_skills = $(this).data('event').skills;
+                        if (my_skills && !$.isEmptyObject(skill_hash)) {
+                          for (var ii = 0; ii < Object.keys(skill_hash).length; ii++) {
+                            skill_hash[Object.keys(skill_hash)[ii]].addClass('dim');
+                          }
+                        }
+                      }
+                    );
+                },
+              });
+              
+              $("#skillcloud").jQCloud(
+                skills, {
+                  afterCloudRender: function() {
+                    $(this).find('a').each(function(i, e) {
+                      skill_hash[$(e).text()] = $(e);
+                    });
+                  },
+                  removeOverflowing: false,
+                  delayedMode: true
+                }
+              );
+            };
+          </script>
+

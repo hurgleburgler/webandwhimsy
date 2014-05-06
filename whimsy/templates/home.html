@@ -6,7 +6,7 @@
     <!-- Le styles -->
     <link href="/static/js/bootstrap/css/bootstrap.css" rel="stylesheet" type='text/css' />
     <link href="/static/js/bootstrap/css/bootstrap-responsive.css" rel="stylesheet" type='text/css' />
-    <link href="/static/css/ui.timeline.css" rel="stylesheet" type='text/css' />
+    <link href="/static/css/whimsical.timeline.css" rel="stylesheet" type='text/css' />
     <link href="/static/css/jqcloud.css" rel="stylesheet" type='text/css' />
     <link href="/static/icomoon/style.css?v=5" rel="stylesheet" type='text/css' />
     <link href='http://fonts.googleapis.com/css?family=Josefin+Sans:600' rel='stylesheet' type='text/css' />
@@ -73,13 +73,14 @@
     <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
     <script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.10.3/jquery-ui.min.js"></script>
     <script src="/static/js/bootstrap/js/bootstrap.min.js"></script>
-    <script src="/static/js/ui.timeline.js"></script>
+    <script src="/static/js/underscore-min.js"></script>
+    <script src="/static/js/whimsical.timeline.js"></script>
     <script src="/static/js/jqcloud-1.0.4.min.js"></script>
     
     <script>
       $(document).ready(function() {
   
-        $('.browsers .icomoon').tooltip();
+        $('.browsers').find('.icomoon').tooltip();
  
         $('ul.nav > li > a').click(function(e) {
           e.preventDefault();
@@ -88,7 +89,7 @@
           var this_id = $this.attr('id');
     
           if (this_id) {
-            $('ul.nav li.active').removeClass('active');
+            $('ul.nav').find('li.active').removeClass('active');
             $this.parent().addClass('active');
             $('#page-contents').empty().load('/' + this_id, function(e) {
               if (typeof(window[this_id + "_init"]) === 'function') {
@@ -98,8 +99,8 @@
           }
         });
     
-        $('a#interactive').click();
-        //$('a#standard').click();
+        $('#interactive').click();
+        //$('#standard').click();
     
       });
     </script>

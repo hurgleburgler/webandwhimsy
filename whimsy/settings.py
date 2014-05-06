@@ -7,7 +7,7 @@ https://docs.djangoproject.com/en/1.6/topics/settings/
 For the full list of settings and their values, see
 https://docs.djangoproject.com/en/1.6/ref/settings/
 """
-print 'FOOBAR!!!!!!'
+
 # Build paths inside the project like this: os.path.join(BASE_DIR, ...)
 import os
 BASE_DIR = os.path.dirname(os.path.dirname(__file__))
@@ -36,6 +36,8 @@ INSTALLED_APPS = (
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    'whimsy',
+    'tastypie',
 )
 
 MIDDLEWARE_CLASSES = (
@@ -57,8 +59,25 @@ WSGI_APPLICATION = 'whimsy.wsgi.application'
 from os import environ
 from urlparse import urlparse
 
+# Parse database configuration from $DATABASE_URL
+#import dj_database_url
+#DATABASES['default'] = dj_database_url.config()
+import dj_database_url
+DATABASES = {'default': dj_database_url.config(default=os.environ.get('DATABASE_URL'))}
+
 #if environ.has_key('DATABASE_URL'):
-#    url = urlparse(environ['DATABASE_URL'])
+#    import dj_database_url
+#    DATABASES = {'default': dj_database_url.config(default=os.environ.get('DATABASE_URL'))}
+#    #url = urlparse(environ['DATABASE_URL'])
+#    #DATABASES['default'] = {
+#    #    'ENGINE': 'django.db.backends.postgresql_psycopg2',
+#    #    'NAME': url.path[1:],
+#    #    'USER': url.username,
+#    #    'PASSWORD': url.password,
+#    #    'HOST': url.hostname,
+#    #    'PORT': url.port,
+#    #}
+#else:
 #    DATABASES['default'] = {
 #        'ENGINE': 'django.db.backends.postgresql_psycopg2',
 #        'NAME': url.path[1:],
@@ -67,13 +86,12 @@ from urlparse import urlparse
 #        'HOST': url.hostname,
 #        'PORT': url.port,
 #    }
-#else:
-DATABASES = {
-    'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
-    }
-}
+#    #DATABASES = {
+#    #    'default': {
+#    #        'ENGINE': 'django.db.backends.sqlite3',
+#    #        'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
+#    #    }
+#    #}
 
 # Internationalization
 # https://docs.djangoproject.com/en/1.6/topics/i18n/
@@ -87,11 +105,6 @@ USE_I18N = True
 USE_L10N = True
 
 USE_TZ = True
-
-
-# Parse database configuration from $DATABASE_URL
-import dj_database_url
-DATABASES['default'] =  dj_database_url.config()
 
 # Honor the 'X-Forwarded-Proto' header for request.is_secure()
 SECURE_PROXY_SSL_HEADER = ('HTTP_X_FORWARDED_PROTO', 'https')
