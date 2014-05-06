@@ -288,6 +288,7 @@ ul.nav .icomoon {
 
 .carousel .carousel-indicators li {
   background-color: #A37E58;
+  cursor: pointer;
 }
 
 .carousel .carousel-inner .item > row h3 {
@@ -339,6 +340,7 @@ ul.nav .icomoon {
 .carousel-container {
   position: relative;
   width: 540px;
+  height: 288px;
 }
 
 /* Skill Cloud */
