@@ -101,7 +101,7 @@
               });
 
               // Get our data
-              $.getJSON('/api/v1/skills?format=json&limit=100').success(function(response) {
+              $.getJSON('/api/v1/skills/?format=json&limit=100').success(function(response) {
                 var skill_hash = {};
   
                 // The value in the DB column is 'name', but we need the key to be 'text'
@@ -135,7 +135,7 @@
                 $myCarousel.carousel('cycle');
  
                 // Now retrieve and use the job information data 
-                $.getJSON('/api/v1/jobs?format=json&limit=100').success(function(jobs) {
+                $.getJSON('/api/v1/jobs/?format=json&limit=100').success(function(jobs) {
                   var events = [];
                   var ii = jobs.objects.length;
                   while(ii--) {
