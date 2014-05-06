@@ -336,6 +336,11 @@ ul.nav .icomoon {
   top: 100%;
 }
 
+.carousel-container {
+  position: relative;
+  width: 540px;
+}
+
 /* Skill Cloud */
 
 div.jqcloud {
@@ -448,8 +453,10 @@ div.jqcloud {
   padding: 6px;
 }
 
+
+
 /* Experience */ 
-.paper-style{
+.paper-style .carousel-container {
   margin: 30px 15px 0;
   width: auto;
   position:relative;
@@ -469,7 +476,7 @@ div.jqcloud {
 }
  
 /* This is the top right shadow */
-.paper-style:before{
+.paper-style .carousel-container:before{
   content: '';
   width: 50px;
   height: 50px;
@@ -498,7 +505,7 @@ div.jqcloud {
 }
  
 /* This is the top left shadow */
-.paper-style:after{
+.paper-style .carousel-container:after{
   content: '';
   width: 100px;
   height: 100px;

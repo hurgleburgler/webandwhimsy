@@ -11,31 +11,37 @@
 
 {% for job in jobs%}
                   <div class="{% if forloop.first %}active {% endif %}item paper-style">
-                    <div class="row work-history-title">
-                      <span class="work-history-job-title">{{ job.title }}</span>
-                      <span class="work-history-dates">{{ job.start|date:"m/y" }} - 
+                    <div class="carousel-container">
+                      <div class="row work-history-title">
+                        <span class="work-history-job-title">{{ job.title }}</span>
+                        <span class="work-history-dates">{{ job.start|date:"m/y" }} - 
     {% if job.end == None %}
         Present
     {% else %}
         {{ job.end|date:"m/y" }}
     {% endif %}
-                      </span>
-                    </div>
-
-                    <div class="row work-company">
-                      <div class="span3">{{ job.company }}<a href="{{ job.company.link }}"><span class="icomoon icon-link" aria-hidden="true"></span></a></div>
-                      <div class="text-right">{{ job.department }}</div>
-                    </div>
-                    <div class="row">
-                      <div class="span6">
-                        <ul class="work-details">
-    {% for task in job.tasks.all %}
-                          <li>{{ task.description }}</li>
-    {% endfor %}
-                        </ul>
+                        </span>
                       </div>
+  
+                      <div class="row work-company">
+                        <div class="span3">{{ job.company }}
+                          <a href="{{ job.company.link }}">
+                            <span class="icomoon icon-link" aria-hidden="true"></span>
+                          </a>
+                        </div>
+                        <div class="text-right">{{ job.department }}</div>
+                      </div>
+                      <div class="row">
+                        <div class="span6">
+                          <ul class="work-details">
+    {% for task in job.tasks.all %}
+                            <li>{{ task.description }}</li>
+    {% endfor %}
+                          </ul>
+                        </div>
+                      </div>
+                      <div class="paper-style_tape{% if forloop.counter|divisibleby:2 %}-straight{% endif %}"></div>
                     </div>
-                    <div class="paper-style_tape"></div>
                   </div>
 {% endfor %}
                 </div>
@@ -217,4 +223,3 @@
               });
             };
           </script>
-
