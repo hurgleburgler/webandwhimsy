@@ -1,0 +1,65 @@
+#standard * {
+  font-weight: 600 !Important;
+  font-family: 'Josefin Sans', sans-serif;
+}
+
+#technical-skills2 dd {
+  padding-bottom: 10px;
+}
+
+#technical-skills2 div {
+  font-size: 16px;
+  padding-top: 5px !important;
+}
+
+#standard #technical-skills {
+  padding-bottom: 10px;
+}
+
+.job-duration div {
+  padding-left: 50px;
+}
+
+.job-local,
+.job-company {
+  font-size: 24px;
+  padding-bottom: 5px;
+}
+
+.job-title,
+.job-department,
+.job-duration {
+  font-size: 20px;
+}
+
+#technical-skills div,
+#standard ul {
+  font-size: 18px;
+  padding: 5px 0;
+}
+
+#technical-skills2 div, 
+#technical-skills div,
+#standard ul li {
+  padding: 2px 0;
+}
+
+#standard .span4 h3 {
+  margin: 0;
+}
+
+#job-qualifications * {
+  font-size: 18px;
+}
+
+.span11 li {
+  font-size: 16px;
+}
+
+.font-underline {
+  text-decoration: underline;
+}
+
+.font-weight-500 {
+  font-weight: 500 !important;
+}

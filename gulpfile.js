@@ -72,7 +72,7 @@ gulp.task('styles', function() {
 gulp.task('print-styles', function() {
     return gulp.src(static_dir + 'css/' + print_file)
         .pipe(rename(print_file_min))
-        .pipe(uglify())
+        .pipe(minify_css({keepBreaks:true}))
         .pipe(gulp.dest(static_dir + 'css/' + destination_dir));
 });
 
