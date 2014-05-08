@@ -1,0 +1,17 @@
+.padding,div.navbar{display:none}
+#standard *{font-family:'Josefin Sans',sans-serif;font-weight:400!Important}
+#technical-skills2 dd{padding-bottom:10px}
+#standard #technical-skills2 div{padding-top:5px!important;font-size:10px}
+#standard #technical-skills{padding-bottom:10px}
+.job-duration div{padding-left:50px}
+.job-company,.job-local{padding-bottom:5px;font-size:18px}
+.job-department,.job-duration,.job-title{font-size:14px}
+#standard #technical-skills div,#standard ul{padding:5px 0;font-size:12px}
+#standard #technical-skills div,#standard #technical-skills2 div,#standard ul li{padding:2px 0}
+#standard .span4 h3{margin:0}
+div.job-local,div.job-title{text-align:right}
+#job-qualifications *,div.span11 li{font-size:12px}
+#job-qualifications ul{padding-left:30px}
+.font-underline{text-decoration:underline}
+.font-weight-500{font-weight:500!important}
+.page-break{page-break-before:always}

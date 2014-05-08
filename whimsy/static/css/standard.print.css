@@ -7,8 +7,8 @@ div.navbar {
 }
 
 #standard * {
-  font-weight: 400 !Important;
   font-family: 'Josefin Sans', sans-serif;
+  font-weight: 400 !Important;
 }
 
 #technical-skills2 dd {
@@ -16,8 +16,8 @@ div.navbar {
 }
 
 #standard #technical-skills2 div {
-  font-size: 10px;
   padding-top: 5px !important;
+  font-size: 10px;
 }
 
 #standard #technical-skills {
@@ -30,8 +30,8 @@ div.navbar {
 
 .job-local,
 .job-company {
-  font-size: 18px;
   padding-bottom: 5px;
+  font-size: 18px;
 }
 
 .job-title,
@@ -42,8 +42,8 @@ div.navbar {
 
 #standard #technical-skills div,
 #standard ul {
-  font-size: 12px;
   padding: 5px 0;
+  font-size: 12px;
 }
 
 #standard #technical-skills2 div, 

@@ -47,6 +47,71 @@ div.jqcloud {
 }
 
 div.jqcloud span { padding: 0; }
+#standard * {
+  font-family: 'Josefin Sans', sans-serif;
+  font-weight: 600 !Important;
+}
+
+#technical-skills2 dd {
+  padding-bottom: 10px;
+}
+
+#technical-skills2 div {
+  padding-top: 5px !important;
+  font-size: 16px;
+}
+
+#standard #technical-skills {
+  padding-bottom: 10px;
+}
+
+.job-duration div {
+  padding-left: 50px;
+}
+
+.job-local,
+.job-company {
+  padding-bottom: 5px;
+  font-size: 24px;
+}
+
+.job-title,
+.job-department,
+.job-duration {
+  font-size: 20px;
+}
+
+#technical-skills div,
+#standard ul {
+  padding: 5px 0;
+  font-size: 18px;
+}
+
+#technical-skills2 div, 
+#technical-skills div,
+#standard ul li {
+  padding: 2px 0;
+}
+
+#standard .span4 h3 {
+  margin: 0;
+}
+
+#job-qualifications * {
+  font-size: 18px;
+}
+
+.span11 li {
+  font-size: 16px;
+}
+
+.font-underline {
+  text-decoration: underline;
+}
+
+.font-weight-500 {
+  font-weight: 500 !important;
+}
 
 .whimsical-timeline table {
   width: 100%;

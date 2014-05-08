@@ -1,6 +1,6 @@
 #standard * {
-  font-weight: 600 !Important;
   font-family: 'Josefin Sans', sans-serif;
+  font-weight: 600 !Important;
 }
 
 #technical-skills2 dd {
@@ -8,8 +8,8 @@
 }
 
 #technical-skills2 div {
-  font-size: 16px;
   padding-top: 5px !important;
+  font-size: 16px;
 }
 
 #standard #technical-skills {
@@ -22,8 +22,8 @@
 
 .job-local,
 .job-company {
-  font-size: 24px;
   padding-bottom: 5px;
+  font-size: 24px;
 }
 
 .job-title,
@@ -34,8 +34,8 @@
 
 #technical-skills div,
 #standard ul {
-  font-size: 18px;
   padding: 5px 0;
+  font-size: 18px;
 }
 
 #technical-skills2 div, 
