@@ -1,0 +1,27 @@
+{
+  "name": "whimsy",
+  "version": "0.0.1",
+  "description": "my whimsical websume",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/hurgleburgler/webandwhimsy.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/hurgleburgler/webandwhimsy/issues"
+  },
+  "homepage": "https://github.com/hurgleburgler/webandwhimsy",
+  "devDependencies": {
+    "gulp": "^3.6.2",
+    "gulp-concat": "^2.2.0",
+    "gulp-jshint": "^1.5.5",
+    "gulp-rename": "^1.2.0",
+    "gulp-sass": "^0.7.1",
+    "gulp-uglify": "^0.2.1"
+  }
+}

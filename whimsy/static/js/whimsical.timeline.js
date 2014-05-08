@@ -97,7 +97,7 @@ $(function() {
         $(document.createElement('td'))
       );
 
-      for (var ii = 0; ii < Math.floor(this.num_months/12); ii++) {
+      for (ii=0; ii<Math.floor(this.num_months/12); ii++) {
         $years.append(
           $(document.createElement('td'))
             .attr('colspan', 24)
@@ -114,7 +114,7 @@ $(function() {
         );
       }
 
-      for (var ii = 0; ii < this.num_months + 1; ii++) {
+      for (ii=0; ii<this.num_months+1; ii++) {
         $top.append(
           $(document.createElement('td'))
             .attr('colspan', '2')

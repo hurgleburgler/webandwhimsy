@@ -1,61 +1,60 @@
-div.whimsical-timeline table {
-  margin: 10px;
+.whimsical-timeline table {
   width: 100%;
+  margin: 10px;
   table-layout: fixed;
 }
 
-div.whimsical-timeline table td {
-  //padding: 5px;
+.whimsical-timeline td {
   text-align: center;
 }
 
-div.whimsical-timeline table tr.timeline-years td {
+.whimsical-timeline .timeline-years td {
   text-align: left;
 }
 
-div.whimsical-timeline tr.timeline-top {
+.whimsical-timeline .timeline-top {
   height: 1em;
 }
 
-div.whimsical-timeline tr.timeline-top td {
+.whimsical-timeline .timeline-top td {
   border-top: 3px solid #472E12;
 }
 
-div.whimsical-timeline tr.timeline-top td:nth-child(12n+2) {
+.whimsical-timeline .timeline-top td:nth-child(12n+2) {
   border-left: 3px solid #472E12 !important;
 }
 
-div.whimsical-timeline tr.timeline-top td:nth-last-child(2) {
+.whimsical-timeline .timeline-top td:nth-last-child(2) {
   border-right: 3px solid #472E12 !important;
 }
 
-div.whimsical-timeline tr.timeline-top td:nth-last-child(1) {
-  border-right: 0px none;
+.whimsical-timeline .timeline-top td:nth-last-child(1) {
+  border-right: 0 none;
 }
 
-div.whimsical-timeline tr.timeline-top td:nth-last-child(1),
-div.whimsical-timeline tr.timeline-top td:nth-child(1) {
-  border-top: 0px none;
+.whimsical-timeline .timeline-top td:nth-last-child(1),
+.whimsical-timeline .timeline-top td:nth-child(1) {
+  border-top: 0 none;
 }
 
 /* To only show year ticks, set the following border to none */
-div.whimsical-timeline tr.timeline-top td {
+.whimsical-timeline .timeline-top td {
   border-right: #472E12 1px solid;
 }
 
-div.whimsical-timeline tr.timeline-months {
+.whimsical-timeline .timeline-months {
   border: none;
 }
 
-div.whimsical-timeline tr.timeline-months td {
+.whimsical-timeline .timeline-months td {
   margin-left: 50%;
 }
 
-div.whimsical-timeline tr.timeline-events td.timeline-event {
-  background-color: #800;
+.whimsical-timeline .timeline-events .timeline-event {
   height: 1em;
+  background-color: #800;
 }
 
-div.whimsical-timeline tr.timeline-events td.timeline-event.filler {
+.whimsical-timeline .timeline-events .filler {
   background-color: transparent !important;
 }

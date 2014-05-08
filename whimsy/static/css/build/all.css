@@ -1,3 +1,114 @@
+/* fonts */
+
+div.jqcloud {
+  font-family: "Helvetica", "Arial", sans-serif;
+  font-size: 10px;
+  line-height: normal;
+}
+
+div.jqcloud a {
+  font-size: inherit;
+  text-decoration: none;
+}
+
+div.jqcloud span.w10 { font-size: 550%; }
+div.jqcloud span.w9 { font-size: 500%; }
+div.jqcloud span.w8 { font-size: 450%; }
+div.jqcloud span.w7 { font-size: 400%; }
+div.jqcloud span.w6 { font-size: 350%; }
+div.jqcloud span.w5 { font-size: 300%; }
+div.jqcloud span.w4 { font-size: 250%; }
+div.jqcloud span.w3 { font-size: 200%; }
+div.jqcloud span.w2 { font-size: 150%; }
+div.jqcloud span.w1 { font-size: 100%; }
+
+/* colors */
+
+div.jqcloud { color: #09f; }
+div.jqcloud a { color: inherit; }
+div.jqcloud a:hover { color: #0df; }
+div.jqcloud a:hover { color: #0cf; }
+div.jqcloud span.w10 { color: #0cf; }
+div.jqcloud span.w9 { color: #0cf; }
+div.jqcloud span.w8 { color: #0cf; }
+div.jqcloud span.w7 { color: #39d; }
+div.jqcloud span.w6 { color: #90c5f0; }
+div.jqcloud span.w5 { color: #90a0dd; }
+div.jqcloud span.w4 { color: #90c5f0; }
+div.jqcloud span.w3 { color: #a0ddff; }
+div.jqcloud span.w2 { color: #99ccee; }
+div.jqcloud span.w1 { color: #aab5f0; }
+
+/* layout */
+
+div.jqcloud {
+  overflow: hidden;
+  position: relative;
+}
+
+div.jqcloud span { padding: 0; }
+
+.whimsical-timeline table {
+  width: 100%;
+  margin: 10px;
+  table-layout: fixed;
+}
+
+.whimsical-timeline td {
+  text-align: center;
+}
+
+.whimsical-timeline .timeline-years td {
+  text-align: left;
+}
+
+.whimsical-timeline .timeline-top {
+  height: 1em;
+}
+
+.whimsical-timeline .timeline-top td {
+  border-top: 3px solid #472E12;
+}
+
+.whimsical-timeline .timeline-top td:nth-child(12n+2) {
+  border-left: 3px solid #472E12 !important;
+}
+
+.whimsical-timeline .timeline-top td:nth-last-child(2) {
+  border-right: 3px solid #472E12 !important;
+}
+
+.whimsical-timeline .timeline-top td:nth-last-child(1) {
+  border-right: 0 none;
+}
+
+.whimsical-timeline .timeline-top td:nth-last-child(1),
+.whimsical-timeline .timeline-top td:nth-child(1) {
+  border-top: 0 none;
+}
+
+/* To only show year ticks, set the following border to none */
+.whimsical-timeline .timeline-top td {
+  border-right: #472E12 1px solid;
+}
+
+.whimsical-timeline .timeline-months {
+  border: none;
+}
+
+.whimsical-timeline .timeline-months td {
+  margin-left: 50%;
+}
+
+.whimsical-timeline .timeline-events .timeline-event {
+  height: 1em;
+  background-color: #800;
+}
+
+.whimsical-timeline .timeline-events .filler {
+  background-color: transparent !important;
+}
+
 /* home */
 body {
   font-family: 'Life Savers', cursive;

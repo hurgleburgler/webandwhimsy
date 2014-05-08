@@ -3,3 +3,4 @@ venv
 *.swp
 *.swo
 staticfiles
+node_modules
