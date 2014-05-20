@@ -60,38 +60,8 @@ from os import environ
 from urlparse import urlparse
 
 # Parse database configuration from $DATABASE_URL
-#import dj_database_url
-#DATABASES['default'] = dj_database_url.config()
 import dj_database_url
 DATABASES = {'default': dj_database_url.config(default=os.environ.get('DATABASE_URL'))}
-
-#if environ.has_key('DATABASE_URL'):
-#    import dj_database_url
-#    DATABASES = {'default': dj_database_url.config(default=os.environ.get('DATABASE_URL'))}
-#    #url = urlparse(environ['DATABASE_URL'])
-#    #DATABASES['default'] = {
-#    #    'ENGINE': 'django.db.backends.postgresql_psycopg2',
-#    #    'NAME': url.path[1:],
-#    #    'USER': url.username,
-#    #    'PASSWORD': url.password,
-#    #    'HOST': url.hostname,
-#    #    'PORT': url.port,
-#    #}
-#else:
-#    DATABASES['default'] = {
-#        'ENGINE': 'django.db.backends.postgresql_psycopg2',
-#        'NAME': url.path[1:],
-#        'USER': url.username,
-#        'PASSWORD': url.password,
-#        'HOST': url.hostname,
-#        'PORT': url.port,
-#    }
-#    #DATABASES = {
-#    #    'default': {
-#    #        'ENGINE': 'django.db.backends.sqlite3',
-#    #        'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
-#    #    }
-#    #}
 
 # Internationalization
 # https://docs.djangoproject.com/en/1.6/topics/i18n/
