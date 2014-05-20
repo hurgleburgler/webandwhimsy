@@ -543,4 +543,5 @@ div.jqcloud {
   -moz-transform: rotate(-2deg) skew(0, 0) translate(0, -5px);
   -o-transform: rotate(-2deg) skew(0, 0) translate(0, -5px);
   transform: rotate(-2deg) skew(0, 0) translate(0, -5px);
+  -webkit-backface-visibility: hidden;
 }
