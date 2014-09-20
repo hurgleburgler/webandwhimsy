@@ -1,15 +1,22 @@
+{% load compress %}
+
 <!DOCTYPE html>
 <html>
   <head>
     <meta http-equiv="Content-Type" content="text/html;charset=utf-8" >
 
+    <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Josefin+Sans:600" />
+    <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Life+Savers:700" />
+    {% compress css %}
     <!-- Le styles -->
-    <link href="/static/js/bootstrap/css/bootstrap.css" rel="stylesheet" type='text/css' />
-    <link href="/static/js/bootstrap/css/bootstrap-responsive.css" rel="stylesheet" type='text/css' />
-    <link href='http://fonts.googleapis.com/css?family=Josefin+Sans:600' rel='stylesheet' type='text/css' />
-    <link href='http://fonts.googleapis.com/css?family=Life+Savers:700' rel='stylesheet' type='text/css' />
-
-    <link rel="stylesheet" type="text/css" href="/static/css/build/all.min.css" media="screen" />
+    <link media="all" rel="stylesheet" type="text/css" href="/static/js/bootstrap/css/bootstrap.css" />
+    <link media="all" rel="stylesheet" type="text/css" href="/static/js/bootstrap/css/bootstrap-responsive.css" />
+    <link media="all" rel="stylesheet" type="text/css" href="/static/css/jqcloud.css" />
+    <link media="all" rel="stylesheet" type="text/css" href="/static/css/standard.css" />
+    <link media="all" rel="stylesheet" type="text/css" href="/static/css/whimsical.timeline.css" />
+    <link media="all" rel="stylesheet" type="text/css" href="/static/css/whimsy.css" />
+    <link media="all" rel="stylesheet" type="text/css" href="/static/icomoon/style.css" />
+    {% endcompress %}
     <link rel="stylesheet" type="text/css" href="/static/css/standard.print.css" media="print" />
 
     <title>Web and Whimsy</title>
@@ -43,11 +50,11 @@
                     <li><a href="https://github.com/hurgleburgler"><span class="icomoon icon-github-2" aria-hidden="true"></span><span>Clone Me!</span></a></li>
                   </ul>
                 </li><!-- dropdown -->
-              </ul><!-- /.nav -->
-            </div><!--/.nav-collapse -->
-          </div><!-- /.container -->
-        </div><!-- /.navbar-inner -->
-      </div><!-- /.navbar -->
+              </ul><!-- .nav -->
+            </div><!-- .nav-collapse -->
+          </div><!-- .container -->
+        </div><!-- .navbar-inner -->
+      </div><!-- .navbar -->
   
   
       <div class="container">
