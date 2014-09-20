@@ -5,10 +5,8 @@
   <head>
     <meta http-equiv="Content-Type" content="text/html;charset=utf-8" >
 
-    <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Josefin+Sans:600" />
-    <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Life+Savers:700" />
-    {% compress css %}
     <!-- Le styles -->
+    {% compress css inline %}
     <link media="all" rel="stylesheet" type="text/css" href="/static/js/bootstrap/css/bootstrap.css" />
     <link media="all" rel="stylesheet" type="text/css" href="/static/js/bootstrap/css/bootstrap-responsive.css" />
     <link media="all" rel="stylesheet" type="text/css" href="/static/css/jqcloud.css" />
@@ -18,6 +16,7 @@
     <link media="all" rel="stylesheet" type="text/css" href="/static/icomoon/style.css" />
     {% endcompress %}
     <link rel="stylesheet" type="text/css" href="/static/css/standard.print.css" media="print" />
+
 
     <title>Web and Whimsy</title>
 
@@ -73,14 +72,15 @@
       </span>
     </footer>
 
-    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
-    <script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.10.3/jquery-ui.min.js"></script>
-    <script src="/static/js/bootstrap/js/bootstrap.min.js"></script>
-    <!--<script src="/static/js/underscore-min.js"></script>
+    {% compress js inline %}
+    <script src="/static/js/jquery-1.11.1.js"></script>
+    <script src="/static/js/jquery-ui-1.11.1.js"></script>
+    <script src="/static/js/bootstrap.js"></script>
+    <script src="/static/js/underscore-min.js"></script>
     <script src="/static/js/whimsical.timeline.js"></script>
-    <script src="/static/js/jqcloud-1.0.4.min.js"></script>-->
-    <script src="/static/js/build/all.min.js"></script>
-    
+    <script src="/static/js/jqcloud-1.0.4.min.js"></script>
+    {% endcompress %}
+
     <script>
       $(document).ready(function() {
   
