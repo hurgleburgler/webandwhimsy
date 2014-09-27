@@ -7,15 +7,15 @@
 
     <!-- Le styles -->
     {% compress css inline %}
-    <link media="all" rel="stylesheet" type="text/css" href="/static/js/bootstrap/css/bootstrap.css" />
-    <link media="all" rel="stylesheet" type="text/css" href="/static/js/bootstrap/css/bootstrap-responsive.css" />
-    <link media="all" rel="stylesheet" type="text/css" href="/static/css/jqcloud.css" />
-    <link media="all" rel="stylesheet" type="text/css" href="/static/css/standard.css" />
-    <link media="all" rel="stylesheet" type="text/css" href="/static/css/whimsical.timeline.css" />
-    <link media="all" rel="stylesheet" type="text/css" href="/static/css/whimsy.css" />
-    <link media="all" rel="stylesheet" type="text/css" href="/static/icomoon/style.css" />
+    <link media="all" rel="stylesheet" type="text/css" href="{{ STATIC_URL }}/js/bootstrap/css/bootstrap.css" />
+    <link media="all" rel="stylesheet" type="text/css" href="{{ STATIC_URL }}/js/bootstrap/css/bootstrap-responsive.css" />
+    <link media="all" rel="stylesheet" type="text/css" href="{{ STATIC_URL }}/css/jqcloud.css" />
+    <link media="all" rel="stylesheet" type="text/css" href="{{ STATIC_URL }}/css/standard.css" />
+    <link media="all" rel="stylesheet" type="text/css" href="{{ STATIC_URL }}/css/whimsical.timeline.css" />
+    <link media="all" rel="stylesheet" type="text/css" href="{{ STATIC_URL }}/css/whimsy.css" />
+    <link media="all" rel="stylesheet" type="text/css" href="{{ STATIC_URL }}/icomoon/style.css" />
     {% endcompress %}
-    <link rel="stylesheet" type="text/css" href="/static/css/standard.print.css" media="print" />
+    <link rel="stylesheet" type="text/css" href="{{ STATIC_URL }}/css/standard.print.css" media="print" />
 
 
     <title>Web and Whimsy</title>
@@ -73,12 +73,12 @@
     </footer>
 
     {% compress js inline %}
-    <script src="/static/js/jquery-1.11.1.js"></script>
-    <script src="/static/js/jquery-ui-1.11.1.js"></script>
-    <script src="/static/js/bootstrap.js"></script>
-    <script src="/static/js/underscore-min.js"></script>
-    <script src="/static/js/whimsical.timeline.js"></script>
-    <script src="/static/js/jqcloud-1.0.4.min.js"></script>
+    <script src="{{ STATIC_URL }}/js/jquery-1.11.1.js"></script>
+    <script src="{{ STATIC_URL }}/js/jquery-ui-1.11.1.js"></script>
+    <script src="{{ STATIC_URL }}/js/bootstrap.js"></script>
+    <script src="{{ STATIC_URL }}/js/underscore-min.js"></script>
+    <script src="{{ STATIC_URL }}/js/whimsical.timeline.js"></script>
+    <script src="{{ STATIC_URL }}/js/jqcloud-1.0.4.min.js"></script>
     {% endcompress %}
 
     <script>
