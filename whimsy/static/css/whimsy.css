@@ -1,3 +1,18 @@
+/* Fonts */
+@font-face {
+  font-family: 'Josefin Sans';
+  font-style: normal;
+  font-weight: 600;
+  src: local('Josefin Sans SemiBold'), local('JosefinSans-SemiBold'), url(http://fonts.gstatic.com/s/josefinsans/v8/C6HYlRF50SGJq1XyXj04zxefZI2gqg-NXpw43Z_DJ3I.woff) format('woff');
+}
+
+@font-face {
+  font-family: 'Life Savers';
+  font-style: normal;
+  font-weight: 700;
+  src: local('Life Savers Bold'), local('LifeSavers-Bold'), url(http://fonts.gstatic.com/s/lifesavers/v6/THQKqChyYUm97rNPVFdGGRbnBKKEOwRKgsHDreGcocg.woff) format('woff');
+}
+
 /* home */
 body {
   font-family: 'Life Savers', cursive;
