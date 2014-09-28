@@ -7,15 +7,15 @@
 
     <!-- Le styles -->
     {% compress css inline %}
-    <link media="all" rel="stylesheet" type="text/css" href="{{ STATIC_URL }}/js/bootstrap/css/bootstrap.css" />
-    <link media="all" rel="stylesheet" type="text/css" href="{{ STATIC_URL }}/js/bootstrap/css/bootstrap-responsive.css" />
-    <link media="all" rel="stylesheet" type="text/css" href="{{ STATIC_URL }}/css/jqcloud.css" />
-    <link media="all" rel="stylesheet" type="text/css" href="{{ STATIC_URL }}/css/standard.css" />
-    <link media="all" rel="stylesheet" type="text/css" href="{{ STATIC_URL }}/css/whimsical.timeline.css" />
-    <link media="all" rel="stylesheet" type="text/css" href="{{ STATIC_URL }}/css/whimsy.css" />
-    <link media="all" rel="stylesheet" type="text/css" href="{{ STATIC_URL }}/icomoon/style.css" />
+    <link media="all" rel="stylesheet" type="text/css" href="{{ STATIC_URL }}js/bootstrap/css/bootstrap.css" />
+    <link media="all" rel="stylesheet" type="text/css" href="{{ STATIC_URL }}js/bootstrap/css/bootstrap-responsive.css" />
+    <link media="all" rel="stylesheet" type="text/css" href="{{ STATIC_URL }}css/jqcloud.css" />
+    <link media="all" rel="stylesheet" type="text/css" href="{{ STATIC_URL }}css/standard.css" />
+    <link media="all" rel="stylesheet" type="text/css" href="{{ STATIC_URL }}css/whimsical.timeline.css" />
+    <link media="all" rel="stylesheet" type="text/css" href="{{ STATIC_URL }}css/whimsy.css" />
+    <link media="all" rel="stylesheet" type="text/css" href="{{ STATIC_URL }}icomoon/style.css" />
     {% endcompress %}
-    <link rel="stylesheet" type="text/css" href="{{ STATIC_URL }}/css/standard.print.css" media="print" />
+    <link rel="stylesheet" type="text/css" href="{{ STATIC_URL }}css/standard.print.css" media="print" />
 
 
     <title>Web and Whimsy</title>
@@ -39,7 +39,7 @@
                 <li><a id="standard" href="">Standard</a></li>
                 <li class="dropdown">
                   <a href="#" class="dropdown-toggle" data-toggle="dropdown">
-                       Contact Me! 
+                       Contact Me!
                   </a>
                   <ul class="dropdown-menu">
                     <li><a href="mailto:bubasti@gmail.com"><span class="icomoon icon-envelope" aria-hidden="true"></span><span>Email Me!</span></a></li>
@@ -54,18 +54,18 @@
           </div><!-- .container -->
         </div><!-- .navbar-inner -->
       </div><!-- .navbar -->
-  
-  
+
+
       <div class="container">
         <div id="page-contents">
         </div>
       </div>
       <div id="push"></div>
     </div>
-  
+
     <footer>
       <span>Designed and Built by <a href="http://webandwhimsy.com">Diana Whitten</a>.</span>
-      <span class='browsers pull-right'>Tested on: 
+      <span class='browsers pull-right'>Tested on:
         <span title="v.21" class="icomoon icon-firefox" aria-hidden="true"></span>
         <span title="v.9/10" class="icomoon icon-IE" aria-hidden="true"></span>
         <span title="v.27" class="icomoon icon-chrome" aria-hidden="true"></span>
@@ -73,25 +73,25 @@
     </footer>
 
     {% compress js inline %}
-    <script src="{{ STATIC_URL }}/js/jquery-1.11.1.js"></script>
-    <script src="{{ STATIC_URL }}/js/jquery-ui-1.11.1.js"></script>
-    <script src="{{ STATIC_URL }}/js/bootstrap.js"></script>
-    <script src="{{ STATIC_URL }}/js/underscore-min.js"></script>
-    <script src="{{ STATIC_URL }}/js/whimsical.timeline.js"></script>
-    <script src="{{ STATIC_URL }}/js/jqcloud-1.0.4.min.js"></script>
+    <script src="{{ STATIC_URL }}js/jquery-1.11.1.js"></script>
+    <script src="{{ STATIC_URL }}js/jquery-ui-1.11.1.js"></script>
+    <script src="{{ STATIC_URL }}js/bootstrap.js"></script>
+    <script src="{{ STATIC_URL }}js/underscore-min.js"></script>
+    <script src="{{ STATIC_URL }}js/whimsical.timeline.js"></script>
+    <script src="{{ STATIC_URL }}js/jqcloud-1.0.4.min.js"></script>
     {% endcompress %}
 
     <script>
       $(document).ready(function() {
-  
+
         $('.browsers').find('.icomoon').tooltip();
- 
+
         $('ul.nav > li > a').click(function(e) {
           e.preventDefault();
-    
+
           var $this = $(this);
           var this_id = $this.attr('id');
-    
+
           if (this_id) {
             $('ul.nav').find('li.active').removeClass('active');
             $this.parent().addClass('active');
@@ -102,10 +102,10 @@
             });
           }
         });
-    
+
         $('#interactive').click();
         //$('#standard').click();
-    
+
       });
     </script>
 

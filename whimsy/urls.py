@@ -16,6 +16,6 @@ v1_api.register(SkillResource())
 urlpatterns = patterns('',
     url(r'^api/', include(v1_api.urls)),
     url(r'^interactive$', views.interactive, name='interactive'),
-    url(r'^standard$', TemplateView.as_view(template_name='standard.html')),
-    url(r'^$', TemplateView.as_view(template_name='home.html')),
+    url(r'^standard$', views.standard, name='standard'),
+    url(r'^$', views.home, name='home'),
 )

@@ -12,11 +12,11 @@
               </div>
               <div id="job-qualifications" class="span10">
                 <ul>
-                  <li class="font-weight-500" >Software Engineer with 10 years of full stack software development, test and system administration experience</li>
-                  <li class="font-weight-500" >Skilled User Experience Engineer, driven to create sleek, intuitive and modern User Interfaces</li>
-                  <li class="font-weight-500" >Self-Motivated and capable of working well independently, remotely, or in a team environment</li>
-                  <li class="font-weight-500" >Able to learn and adapt quickly to any programming language or technology</li>
-                  <li class="font-weight-500" >Eager to apply exceptional analytical problem solving skills to reveal creative, innovative and efficient solutions</li>
+                  <li class="font-weight-500">Software Engineer with 10 years of full stack software development, test and system administration experience</li>
+                  <li class="font-weight-500">Skilled User Experience Engineer, driven to create sleek, intuitive and modern User Interfaces</li>
+                  <li class="font-weight-500">Self-Motivated and capable of working well independently, remotely, or in a team environment</li>
+                  <li class="font-weight-500">Able to learn and adapt quickly to any programming language or technology</li>
+                  <li class="font-weight-500">Eager to apply exceptional analytical problem solving skills to reveal creative, innovative and efficient solutions</li>
                 </ul>
               </div>
               <div class="span1">
@@ -33,7 +33,7 @@
                 <h3 class="font-underline"><center>Current</center></h3>
                 <div class="text-center">Python / Django</div>
                 <div class="text-center">JavaScript / jQuery / OpenLayers</div>
-                <div class="text-center">jQuery UI / Twiiter's Bootstrap</div>
+                <div class="text-center">jQuery UI / Twitter's Bootstrap 2 & 3</div>
                 <div class="text-center">HTML5 / CSS3</div>
                 <div class="text-center">PostgreSQL / MySQL / Sqlite</div>
                 <div class="text-center">XML / JSON</div>
@@ -77,169 +77,30 @@
               </div>
             </div>
 
+            {% for company in companies %}
             <div class="row">
-              <div class="span6 font-underline job-company">Rincon Research Corporation</div>
-              <div class="span6 font-underline text-right job-local">Tucson, AZ</div>
+              <div class="span6 font-underline job-company">{{ company.company.name }}</div>
+              <div class="span6 font-underline text-right job-local">{{ company.company.location }}</div>
             </div>
+            {% for job in company.jobs %}
             <div class="row">
-              <div class="span4 job-duration"><div>01/13 - Present</div></div>
-              <div class="span4 text-center job-department">Integrated Solutions</div>
-              <div class="span4 text-right job-title">User Experience Engineer</div>
-            </div>
-            <div class="row">
-              <div class="span1">
-              </div>
-              <div class="font-weight-500 span11">
-                <ul>
-                  <li>Created a responsive and interactive web Front-End interface for a proprietary URI based API using advanced JavaScript techniques and leveraging Twitter's Bootstrap, jQuery, JSON through AJAX for Rincon's commercial DSPBrik II product</li>
-                  <li>Created and maintained a Kickstart repository for fast setup of machines at various global sites using Cobbler</li>
-                  <li>Created a responsive web Front-End interface, leveraging Bootstrap, jQuery and JSON for satellite downlink archiving software</li>
-                </ul>
-              </div>
-            </div>
-            <div class="row page-break">
-              <div class="span4 job-duration"><div>01/11 - 12/12</div></div>
-              <div class="span4 text-center job-department">Research & Technology Division</div>
-              <div class="span4 text-right job-title">Software Engineer + Full Stack Developer</div>
+              <div class="span4 job-duration"><div>{{ job.start }} - {{ job.end }}</div></div>
+              <div class="span4 text-center job-department">{{ job.department }}</div>
+              <div class="span4 text-right job-title">{{ job.title }}</div>
             </div>
             <div class="row">
               <div class="span1">
               </div>
               <div class="font-weight-500 span11">
                 <ul>
-                  <li>Full stack development and architecture on several web applications. Implemented entire backend, database integration, and front end user interface utilizing Django, legacy PostgreSQL/PostGIS, HTML/HTML5, CSS/CSS3, jQuery/jQuery UI</li>
-                  <li>Designed and implemented several jQuery UI Widget Factory plugins for use across all future web applications</li>
-                  <li>Member of a team that maintained and enhanced an established multi-server cluster software framework written in Python and C++</li>
+                  {% for task in job.tasks.all %}
+                  <li>{{ task.description }}</li>
+                  {% endfor %}
                 </ul>
               </div>
             </div>
-            <div class="row">
-              <div class="span4 job-duration"><div>09/07 - 12/10</div></div>
-              <div class="span4 text-center job-department">Applied Technology Division</div>
-              <div class="span4 text-right job-title">Software Engineer / Team Lead</div>
-            </div>
-            <div class="row">
-              <div class="span1">
-              </div>
-              <div class="font-weight-500 span11">
-                <ul>
-                  <li>Team lead of a small team who conceived, analyzed, designed, implemented, tested, deployed, and maintained software-based solutions for modern geolocation systems in support of national security defense</li>
-                  <li>Aided in algorithm development, hardware control, GUI design, and database maintenance and development</li>
-                  <li>Productive member during 3 overseas trips, ending in successful product deliveries</li>
-                </ul>
-              </div>
-            </div>
-
-            <div class="row">
-              <div class="span6 font-underline job-company">Ventana Medical Systems Incorporated</div>
-              <div class="span6 font-underline text-right job-local">Oro Valley, AZ</div>
-            </div>
-            <div class="row">
-              <div class="span4 job-duration"><div>08/06 - 9/07</div></div>
-              <div class="span4 text-center job-department">Advanced Staining Software</div>
-              <div class="span4 text-right job-title">Software Test Engineer</div>
-            </div>
-            <div class="row">
-              <div class="span1">
-              </div>
-              <div class="font-weight-500 span11">
-                <ul>
-                  <li>Authored, verified and executed system test plans and procedures for automated tissue staining instrument software under the strict regulations of the FDA's General Principles of Software Validation</li>
-                  <li>Creation of automated Microsoft templates for generating a variety of test documents with VBA, including Test Plans, Test Protocols, Validation Summary Reports and Release Memos</li>
-                  <li>Creation and maintenance of collaborative team documentation through a Wiki web resource on a WIMP installation (Windows 2003, IIS, MySQL and PHP) </li>
-                </ul>
-              </div>
-            </div>
-
-            <div class="row">
-              <div class="span6 font-underline job-company">International Business Machines Corporation</div>
-              <div class="span6 font-underline text-right job-local">Tucson, AZ</div>
-            </div>
-            <div class="row">
-              <div class="span4 job-duration"><div>09/05 - 7/06</div></div>
-              <div class="span4 text-center job-department">Build Automation and Tools Team</div>
-              <div class="span4 text-right job-title">Software Engineer</div>
-            </div>
-            <div class="row">
-              <div class="span1">
-              </div>
-              <div class="font-weight-500 span11">
-                <ul>
-                  <li>Served as the team's focal point for the DS-8000 Enterprise Storage Subsystem (ESS)</li>
-                  <li>Extended and automated a product build system used to package and deliver software to customers</li>
-                  <li>Created and administrated numerous code libraries for multiple simultaneous development streams</li>
-                  <li>Provided support to DS-8000 ESS development, test, and technical project leads for CMVC, DFS and GSA</li>
-                  <li>Administered the IBM Configuration Management Version Control defect and code repository</li>
-                </ul>
-              </div>
-            </div>
-            <div class="row">
-              <div class="span4 job-duration"><div>06/04 - 08/05</div></div>
-              <div class="span4 text-center job-department">Code Integration Test, FVT</div>
-              <div class="span4 text-right job-title">Software Engineer</div>
-            </div>
-            <div class="row">
-              <div class="span1">
-              </div>
-              <div class="font-weight-500 span11">
-                <ul>
-                  <li>Authored, verified and executed DS-8000 ESS test plans of hardware/software integration functions for the Flexible Service Processor (FSP), IBM pSeries Hypervisor (PHYP) and the xSeries Hardware Management Console (HMC)</li>
-                  <li>Served as the Tucson DS-8000 Enterprise Storage Subsystem Code Integration Test representative between product development and testing to San Jose, Austin, Rochester and Hungary IBM sites</li>
-                  <li>Twice received Bravo Awards for work performed during two overseas assignments at the IBM Manufacturing plant in Vac, Hungary, to facilitate the delivery of the DS8000 ESS product</li>
-                </ul>
-              </div>
-            </div>
-            <div class="row">
-              <div class="span4 job-duration"><div>01/03 - 08/03</div></div>
-              <div class="span4 text-center job-department">Early Verification Tester, Baseline Team</div>
-              <div class="span4 text-right job-title">Co-op</div>
-            </div>
-            <div class="row">
-              <div class="span1">
-              </div>
-              <div class="font-weight-500 span11">
-                <ul>
-                  <li>Debugged and repaired hardware problems and Performed failure analysis</li>
-                  <li>Tested hardware and software capabilities of the IBM 800 and F model Enterprise Storage Servers</li>
-                </ul>
-              </div>
-            </div>
-
-            <div class="row page-break">
-              <div class="span6 font-underline job-company">New Mexico State University</div>
-              <div class="span6 font-underline text-right job-local">Las Cruces, NM</div>
-            </div>
-            <div class="row">
-              <div class="span4 job-duration"><div>09/03 - 05/04</div></div>
-              <div class="span4 text-center job-department">Information and Communication Technologies</div>
-              <div class="span4 text-right job-title">PC Server Administrator</div>
-            </div>
-            <div class="row">
-              <div class="span1">
-              </div>
-              <div class="font-weight-500 span11">
-                <ul>
-                  <li>Packaged software and built system images for campus wide distribution</li>
-                  <li>Troubleshot, repaired and installed hardware/software components</li>
-                </ul>
-              </div>
-            </div>
-            <div class="row">
-              <div class="span4 job-duration"><div>08/01 - 12/02</div></div>
-              <div class="span4 text-center job-department">Mathematical Sciences Department</div>
-              <div class="span4 text-right job-title">Computer Operations Group</div>
-            </div>
-            <div class="row">
-              <div class="span1">
-              </div>
-              <div class="font-weight-500 span11">
-                <ul>
-                  <li>Administrated the Mathematics Department lab of 40+ computers and servers</li>
-                  <li>Troubleshot, repaired and installed hardware/software components</li>
-                  <li>Provided overall computer support for Department Professors and Graduate Students</li>
-                </ul>
-              </div>
-            </div>
+            {% endfor %}
+            {% endfor %}
 
             <div class="row">
               <div class="span12">
