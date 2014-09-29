@@ -344,7 +344,15 @@ footer {
 }
 
 .carousel {
-  height: 330px;
+    height: 330px;
+}
+
+.carousel-inner{
+    height: 322px;
+}
+
+.carousel-inner {
+  overflow: hidden;
 }
 
 .carousel .carousel-indicators, 
