@@ -31,7 +31,7 @@
                         </div>
                         <div class="text-right">{{ job.department }}</div>
                       </div>
-                      <div class="row">
+                      <div class="row work-tasks">
                         <div class="span6">
                           <ul class="work-details">
     {% for task in job.tasks.all %}
@@ -62,9 +62,8 @@
               <div class="span6 text-center" id="education">
                 <strong><h4 class="text-center"><a href="http://www.nmsu.edu">New Mexico State University</a></h4></strong>
                 <h5 class="text-center">Bachelor of Science Degree</h5>
-                <h5 class="text-center">Double Major: <a href="http://catalog.nmsu.edu/previous-years/undergraduate/Undergraduate_Catalog_03_04/ch3/cs.html">Computer Science</a> & <a href="http://catalog.nmsu.edu/previous-years/undergraduate/Undergraduate_Catalog_03_04/ch3/math.html">Mathematics</a></h5>
-                <h5 class="text-center">Supplementary Major: <a href="http://www.math.nmsu.edu/supmajor2.html">Applied Mathematics</a></h5>
-                <h5 class="text-center">Graduated May, 2004</h5>
+                <h5 class="text-center">Double Major: <a href="http://www.cs.nmsu.edu/wp13/bs-in-cs/">Computer Science</a> & <a href="http://www.math.nmsu.edu/undergradprogram/mathmajor.html">Mathematics</a></h5>
+                <h5 class="text-center">Supplementary Major: <a href="http://www.math.nmsu.edu/undergradprogram/supmajor2.html">Applied Mathematics</a></h5>
               </div>
 
             </div>
@@ -96,13 +95,15 @@
               var $myCarousel = $('#myCarousel');
               var $myTimeline = $('#myTimeline');
               var $myCloud = $('#skillcloud');
+              var $myTimelineEvents = $('.timeline-event');
+
               var tipFormat = _.template(
-                '<div class="event-tip" data-id=<%= data.id %>id="event-<%= data.id %>-tip"><%= data.tip1 %></div>' + 
+                '<div class="event-tip" data-id=<%= data.id %>id="event-<%= data.id %>-tip"><%= data.tip1 %></div>' +
                 '<div><%= data.tip2 %></div>', null, {variable: 'data'});
 
               // Realign the tooltip in the timeline when we are done resizing the window
               $(window).resize(function() {
-                $('.timeline-event')
+                $myTimelineEvents
                   .tooltip('show');
               });
 
@@ -169,7 +170,7 @@
                     },
                     afterCreate: function(e) {
                       var $this = $(this);
-                      $this.find('tr.timeline-events')
+                      $this.find('.timeline-events')
                         .hover(
                           function(e) {
                           },
@@ -217,7 +218,7 @@
                             }
                           }
                         );
-                    },
+                    }
                   });
                 });
               });

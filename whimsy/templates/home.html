@@ -86,14 +86,14 @@
 
         $('.browsers').find('.icomoon').tooltip();
 
-        $('ul.nav > li > a').click(function(e) {
+        $('.nav > li > a').click(function(e) {
           e.preventDefault();
 
           var $this = $(this);
           var this_id = $this.attr('id');
 
           if (this_id) {
-            $('ul.nav').find('li.active').removeClass('active');
+            $('.nav').find('.active').removeClass('active');
             $this.parent().addClass('active');
             $('#page-contents').empty().load('/' + this_id, function(e) {
               if (typeof(window[this_id + "_init"]) === 'function') {
