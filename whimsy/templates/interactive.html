@@ -95,7 +95,6 @@
               var $myCarousel = $('#myCarousel');
               var $myTimeline = $('#myTimeline');
               var $myCloud = $('#skillcloud');
-              var $myTimelineEvents = $('.timeline-event');
 
               var tipFormat = _.template(
                 '<div class="event-tip" data-id=<%= data.id %>id="event-<%= data.id %>-tip"><%= data.tip1 %></div>' +
@@ -103,7 +102,7 @@
 
               // Realign the tooltip in the timeline when we are done resizing the window
               $(window).resize(function() {
-                $myTimelineEvents
+                $('.timeline-event')
                   .tooltip('show');
               });
 
