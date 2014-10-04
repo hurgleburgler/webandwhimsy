@@ -4,6 +4,7 @@ $(function() {
   $.widget( "whimsical.timeline", {
     // default options
     options: {
+      events: [],
       range: null, 
       months: ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun',
                'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'],
@@ -17,7 +18,7 @@ $(function() {
 
       // callbacks
       beforeCreate: null,
-      afterCreate: null,
+      afterCreate: null
     },
   
     // the constructor
@@ -25,7 +26,7 @@ $(function() {
       this._trigger('beforeCreate');
 
       this.options.events.sort(function(x, y) {
-        return x.range[0].getTime() > y.range[0].getTime();
+        return x.range[0].getTime() > y.range[0].getTime() ? 1 : -1;
       });
 
       var end_range = this.options.events[this.options.events.length-1].range[1];
@@ -36,7 +37,7 @@ $(function() {
         this.options.range[0] = new Date(start_range.getFullYear(), 0, 1);
         this.options.events.unshift({
           range: [this.options.range[0], this.options.events[0].range[0]],
-          class: 'filler',
+          class: 'filler'
         });
       }
 
@@ -49,8 +50,8 @@ $(function() {
       // This is the fastest way.  Append to the DOM only once at the very end
       var $this_tbl = $(document.createElement('table'))
         //.appendTo($this_element)
-        //.attr('border', '1px')
-        .attr('id', 'whimsical-timeline_' + $('.whimsical-timeline').length);
+        //.prop('border', '1px')
+        .prop('id', 'whimsical-timeline_' + $('.whimsical-timeline').length);
 
       if (this.options.range[0] > this.options.range[1]) {
         var save_it = this.options.range[0];
@@ -65,7 +66,7 @@ $(function() {
         .appendTo($tbody);
 
       this.$events.append($(document.createElement('td'))
-        .attr('colspan', '2')
+        .prop('colspan', '2')
       );
 
       for (var ii=0; ii<this.options.events.length; ii++) {
@@ -74,7 +75,7 @@ $(function() {
 
       // TODO : Fix this!  Don't hardcode 3
       this.$events.append($(document.createElement('td'))
-        .attr('colspan', '3')
+        .prop('colspan', '3')
       );
 
       var $top = $(document.createElement('tr'))
@@ -100,7 +101,7 @@ $(function() {
       for (ii=0; ii<Math.floor(this.num_months/12); ii++) {
         $years.append(
           $(document.createElement('td'))
-            .attr('colspan', 24)
+            .prop('colspan', 24)
             .html(this.options.range[0].getFullYear() + ii)
         );
       }
@@ -109,7 +110,7 @@ $(function() {
       if (remaining_months > 0) {
         $years.append(
           $(document.createElement('td'))
-            .attr('colspan', remaining_months)
+            .prop('colspan', remaining_months)
             .html(this.options.range[0].getFullYear() + Math.floor(this.num_months/12))
         );
       }
@@ -117,7 +118,7 @@ $(function() {
       for (ii=0; ii<this.num_months+1; ii++) {
         $top.append(
           $(document.createElement('td'))
-            .attr('colspan', '2')
+            .prop('colspan', '2')
         );
 
         var this_month = this.options.months[ii%12];
@@ -127,10 +128,10 @@ $(function() {
 
         $months.append(
           $(document.createElement('td'))
-            .attr('colspan', '2')
+            .prop('colspan', '2')
             .html(this_month)
             .addClass('month')
-            .attr('id', 'month-'+ii)
+            .prop('id', 'month-'+ii)
         );
       }
 
@@ -153,8 +154,8 @@ $(function() {
     _addEvent: function(event) {
       this.$events.append(
         $(document.createElement('td'))
-          .attr('colspan', this._getMonths(event.range[0], event.range[1]) * 2)
-          .attr('title', this.options.tipFormatter.call(this, event))
+          .prop('colspan', this._getMonths(event.range[0], event.range[1]) * 2)
+          .prop('title', this.options.tipFormatter.call(this, event))
           .tooltip({
             container: this.options.tipContainer,
             html: true,
@@ -164,7 +165,7 @@ $(function() {
             'event': event,
             'id': event.id
           })
-          .attr('id', (event.id ? 'event-' + event.id : 'event'))
+          .prop('id', (event.id ? 'event-' + event.id : 'event'))
           .addClass('timeline-event' + (event.class ? ' ' + event.class : ''))
       );
     },
