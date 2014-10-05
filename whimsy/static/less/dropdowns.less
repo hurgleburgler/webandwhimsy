@@ -103,8 +103,9 @@
   &:focus {
     color: @dropdown-link-disabled-color;
   }
-
-  // Nuke hover/focus effects
+}
+// Nuke hover/focus effects
+.dropdown-menu > .disabled > a {
   &:hover,
   &:focus {
     text-decoration: none;
@@ -211,3 +212,4 @@
     }
   }
 }
+
