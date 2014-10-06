@@ -1,3 +1,5 @@
+@import "bootstrap/bootstrap.less";
+
 /* Fonts */
 @font-face {
   font-family: 'Josefin Sans';
@@ -23,6 +25,10 @@ html {
   -webkit-font-smoothing: antialiased;
 }
 
+.navbar {
+  border-radius: 0;
+  marign-bottom: 0px;
+}
 .navbar-brand,
 h1 {
   font-size: 34px;
@@ -42,13 +48,6 @@ body {
   height: 100%;
 }
  
-#wrap {
-  height: auto !important;
-  height: 100%;
-  min-height: 100%;
-  margin: 0 auto -30px;
-}
-
 body {
   min-width: 580px;
 }
@@ -96,6 +95,14 @@ footer {
   margin: 4px 0 12px 0;
 }
 
+.work-company .pull-left {
+  padding-right: 0px !important;
+}
+
+.work-company .pull-right {
+  padding-left: 0px !important;
+}
+
 /* interactive.html styles */
 /* Responsive */
 @media (max-width: 767px) {
@@ -115,18 +122,23 @@ footer {
     font-size: 19px;
   }
 
-  .carousel .carousel-inner .work-company div {
+  .carousel .carousel-inner .work-company span {
     font-size: 17.5px;
   }
 
-  .carousel .carousel-inner .work-company > div:not(.text-right) {
-    float: left;
+  .carousel .carousel-container li {
+    font-size: 13.5px;
+    line-height: 17px;
   }
 
-  .carousel .carousel-inner .work-company > div {
-    padding: 10px 0 12px 12px;
+  .carousel .carousel-inner .work-company.row > span {
+    padding: 10px 26px 12px;
     display: inline-block;
     width: auto;
+  }
+
+  .carousel .carousel-inner .work-tasks > div {
+    padding-right: 0px;
   }
 
   .work-details li {
@@ -176,10 +188,26 @@ footer {
     left: 200px;
   }
 }
+@media (min-width: 768px) and (max-width: 989px) {
+  #skillcloud {
+    font-size: 12px;
+    height: 550px;
+    margin-top: 0px;
+  }
+  #skill-title {
+    margin-top: 40px;
+  }
+  #education-title {
+    margin-bottom: 20px;
+  }
+  .carousel .carousel-container,
+  .carousel .carousel-container li {
+    font-size: 15px;
+    line-height: 23px;
+  }
 
-@media (min-width: 768px) and (max-width: 979px) {
-  .carousel .carousel-inner .work-company > div {
-   padding: 0 0 0 12px;
+  .carousel .carousel-inner .work-company.row > span {
+   padding: 0 26px;
   }
 
   .carousel ul.work-details li {
@@ -215,7 +243,16 @@ footer {
   }
 }
 
-@media (min-width: 980px) and (max-width: 1199px) {
+@media (min-width: 990px) and (max-width: 1199px) {
+  #skillcloud {
+    font-size: 9px;
+    height: 540px;
+  }
+  .carousel .carousel-container,
+  .carousel .carousel-container li {
+    font-size: 13.5px;
+  }
+
   .carousel .carousel-inner .work-history-dates {
     font-size: 16px;
     padding-top: 5px;
@@ -225,8 +262,8 @@ footer {
     font-size: 20px;
   }
 
-  .carousel .carousel-inner .work-company div {
-   padding: 0 0 0 12px;
+  .carousel .carousel-inner .work-company span {
+   padding: 0 26px;
   } 
 
   .work-details li {
@@ -243,12 +280,12 @@ footer {
     font-size: 19px;
   }
 
-  .carousel .carousel-inner .work-company div {
+  .carousel .carousel-inner .work-company span {
     font-size: 17.5px;
   }
 
-  .carousel .carousel-inner .work-company > div {
-   padding: 10px 0 12px 12px;
+  .carousel .carousel-inner .work-company.row > span {
+    padding: 10px 26px 5px;
   }
 }
 
@@ -260,7 +297,7 @@ footer {
 }
 
 .icomoon.dim-icon {
-  padding: 8px 8px 0 10px;
+  padding: 8px 8px 0 10px26;
   font-size: 24px;
   background-image: none;
   opacity: .7;
@@ -291,13 +328,13 @@ footer {
 
 /* Bootstrap Carousel Customizings */
 
-.carousel .carousel-indicators .active {
-  background-color: #A5C639;
+.carousel-indicators .active {
+  border: none;
 }
 
-.carousel .carousel-indicators li {
+.carousel-indicators li {
   cursor: pointer;
-  background-color: #A37E58;
+  background-color: @carousel-indicator-border-color;
 }
 
 .carousel .carousel-inner .item > row h3 {
@@ -306,10 +343,6 @@ footer {
 
 .carousel .carousel-inner .work-company .text-right {
   padding-right: 10px;
-}
-
-.carousel .carousel-inner .work-company {
-  padding: 10px 0 0 0;
 }
 
 .carousel .carousel-inner .work-history-title {
@@ -324,7 +357,7 @@ footer {
 }
 
 .carousel .carousel-inner .work-details {
-  padding: 0 40px 0 0;
+  padding: 0 0 0 10px;
 }
 
 .carousel .carousel-inner .work-company a .icomoon {
@@ -396,19 +429,8 @@ div.jqcloud {
   display: inline-block;
 }
 
-#skillcloud {
-  position: relative;
-  width: 100%;
-  height: 600px;
-  overflow: visible;
-  margin-top: -30px;
-}
-
-#skillcloud .dim {
-  opacity: .15;
-}
-
-#skillcloud a, 
+a,
+#skillcloud a,
 .tooltip {
   -webkit-transition: opacity .25s ease-in-out, -webkit-transform .25s ease-in-out;
   -moz-transition: opacity .25s ease-in-out, -moz-transform .25s ease-in-out;
@@ -416,29 +438,41 @@ div.jqcloud {
   transition: opacity .25s ease-in-out, transform .25s ease-in-out;
 }
 
-#skillcloud .w10 {
-  color: #472E12;
-}
+#skillcloud {
+  position: relative;
+  width: 100%;
+  height: 600px;
+  overflow: visible;
+  margin-top: -30px;
 
-#skillcloud .w9 {
-  color: #700;
-}
+  .dim {
+    opacity: .15;
+  }
 
-#skillcloud .w5, 
-#skillcloud .w1 {
-  color: #a00;
-}
+  .w10 {
+    color: #472E12;
+  }
 
-#skillcloud .w7 {
-  color: #A37E58;
-}
+  .w9 {
+    color: #700;
+  }
 
-#skillcloud .w4 {
-  color: #738B28;
-}
+  .w5,
+  .w1 {
+    color: #a00;
+  }
 
-#skillcloud .w2 {
-  color: #A5C639;
+  .w7 {
+    color: #A37E58;
+  }
+
+  .w4 {
+    color: #738B28;
+  }
+
+  .w2 {
+    color: #A5C639;
+  }
 }
 
 /* Timeline */
@@ -472,10 +506,6 @@ div.jqcloud {
   border-right: none;
 }
 
-.tooltip:hover .details {
-  display: block;
-}
-
 .tooltip:hover .tooltip-arrow {
   bottom: 1px;
 }
@@ -507,7 +537,7 @@ div.jqcloud {
 .paper-style .carousel-container {
   position:relative;
   width: auto;
-  margin: 30px 15px 0;
+  margin: 28px 15px 0;
   background:#fff;
   background: -webkit-gradient(linear, 0 20%, 0 92%, from(#fff), to(#f3f3f3), color-stop(.1,#fff));
   background: -moz-linear-gradient(0 0 270deg, #fff, #fff 10%, #f3f3f3);
@@ -515,9 +545,7 @@ div.jqcloud {
   background: -o-linear-gradient(0 0 270deg, #fff, #fff 10%, #f3f3f3);
   background: -webkit-linear-gradient(0 0 270deg, #fff, #fff 10%, #f3f3f3);
   border: 1px solid #ccc;
-  -webkit-border-radius: 60px 5px;
-  -moz-border-radius: 60px/5px;
-  border-radius: 60px/5px;
+  border-radius: 60px~"/"5px;
   -webkit-box-shadow: 0 0 35px rgba(0, 0, 0, 0.1) inset;
   -moz-box-shadow: 0 0 35px rgba(0, 0, 0, 0.1) inset;
   box-shadow: 0 0 35px rgba(0, 0, 0, 0.1) inset;
@@ -542,7 +570,9 @@ div.jqcloud {
   -moz-box-shadow: 10px -10px 8px rgba(0, 0, 0, 0.2);
   box-shadow: 10px -10px 8px rgba(0, 0, 0, 0.2);
 }
- 
+
+@tape_width: 130px;
+
 /* This is the top left shadow */
 .paper-style .carousel-container:after{
   position:absolute;
@@ -567,8 +597,9 @@ div.jqcloud {
 .paper-style-tape {
   position: absolute;
   top: -20px;
-  right: 200px;
-  width: 130px;
+  right: 50%;
+  margin-right: -1 * @tape_width/2;
+  width: @tape_width;
   height: 40px;
   background: -webkit-gradient(linear, 555% 20%, 0 92%, from(rgba(0, 0, 0, 0.1)), to(rgba(0, 0, 0, 0)), color-stop(0.1, rgba(0, 0, 0, 0.2)));
   background: -moz-linear-gradient(555% 0 180deg, rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.2) 10%, rgba(0, 0, 0, 0));
@@ -594,4 +625,18 @@ div.jqcloud {
 
 h1, h2, h3, h4, h5, h6 {
   margin: 4px 0;
+}
+
+.navbar .navbar-toggle,
+.navbar .navbar-toggle:hover {
+  background-color: #2b1c0b;
+  background-image: linear-gradient(to bottom, #33210d, #1e1408);
+  background-repeat: repeat-x;
+  border-color: rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.25);
+  box-shadow: 0 1px 0 rgba(255, 255, 255, 0.1) inset, 0 1px 0 rgba(255, 255, 255, 0.075);
+  float: right;
+  margin-left: 5px;
+  margin-right: 5px;
+  padding: 7px 10px;
+  text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25);
 }

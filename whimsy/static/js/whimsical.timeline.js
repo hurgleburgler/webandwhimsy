@@ -9,7 +9,7 @@ $(function() {
       months: ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun',
                'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'],
       
-      tipContainer: 'body',
+      tipContainer: null,
       tipTrigger: 'hover',
 
       tipFormatter: function(tip, options) {
@@ -152,22 +152,22 @@ $(function() {
         .removeClass( "whimsical-timeline" );
     },
     _addEvent: function(event) {
-      this.$events.append(
-        $(document.createElement('td'))
-          .prop('colspan', this._getMonths(event.range[0], event.range[1]) * 2)
-          .prop('title', this.options.tipFormatter.call(this, event))
-          .tooltip({
-            container: this.options.tipContainer,
-            html: true,
-            trigger: this.options.tipTrigger,
-          })
-          .data({
-            'event': event,
-            'id': event.id
-          })
-          .prop('id', (event.id ? 'event-' + event.id : 'event'))
-          .addClass('timeline-event' + (event.class ? ' ' + event.class : ''))
-      );
+      var $elem = $(document.createElement('td'))
+        .prop('colspan', this._getMonths(event.range[0], event.range[1]) * 2)
+        .prop('title', this.options.tipFormatter.call(this, event));
+
+      $elem.tooltip({
+        container: this.options.tipContainer || $elem,
+        html: true,
+        trigger: this.options.tipTrigger
+      })
+      .data({
+          'event': event,
+          'id': event.id
+      })
+      .prop('id', (event.id ? 'event-' + event.id : 'event'))
+      .addClass('timeline-event' + (event.class ? ' ' + event.class : ''))
+      this.$events.append($elem);
     },
     _getMonths: function(d1, d2) {
       var months;

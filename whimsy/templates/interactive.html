@@ -27,16 +27,16 @@
                         </span>
                       </div>
   
-                      <div class="work-company">
-                        <div class="col-md-6">{{ job.company }}
+                      <div class="row work-company">
+                        <span class="pull-left">{{ job.company }}
                           <a href="{{ job.company.link }}">
                             <span class="icomoon icon icon-link" aria-hidden="true"></span>
                           </a>
-                        </div>
-                        <div class="text-right">{{ job.department }}</div>
+                        </span>
+                        <span class="pull-right">{{ job.department }}</span>
                       </div>
                       <div class="work-tasks">
-                        <div class="col-md-12">
+                        <div id="timeline-row" class="col-md-12">
                           <ul class="work-details">
     {% for task in job.tasks.all %}
                             <li>{{ task.description }}</li>
@@ -107,10 +107,11 @@
               var $myCarousel = $('#myCarousel');
               var $myTimeline = $('#myTimeline');
               var $myCloud = $('#skillcloud');
+              var $body = $('body');
 
               var tipFormat = _.template(
                 '<div class="event-tip" data-id=<%= data.id %>id="event-<%= data.id %>-tip"><%= data.tip1 %></div>' +
-                '<div><%= data.tip2 %></div>', null, {variable: 'data'});
+                '<div class="tooltip-job-title"><%= data.tip2 %></div>', null, {variable: 'data'});
 
               var delay = (function(){
                 var timer = 0;
@@ -124,9 +125,11 @@
               $(window).resize(function() {
                 $('.timeline-event')
                   .tooltip('hide');
-                delay(function(){
-                  $('.timeline-event')
-                    .tooltip('show');
+                delay(function() {
+                  if ($body.width() > 990) {
+                    $('.timeline-event')
+                      .tooltip('show');
+                  }
                 }, 500);
               });
 
@@ -138,7 +141,7 @@
                 // in order to work with the 3rd party jQCloud plugin ... the value should
                 // really be a constructor value
                 var skills = [];
-                for(var ii = 0; ii < response.objects.length; ii++) {
+                for (var ii = 0; ii < response.objects.length; ii++) {
                   skills.push({
                     weight: response.objects[ii].weight,
                     text: response.objects[ii].name,
@@ -168,7 +171,7 @@
                 $.getJSON('/api/v1/jobs/?format=json&limit=100').success(function(jobs) {
                   var events = [];
                   var ii = jobs.objects.length;
-                  while(ii--) {
+                  while (ii--) {
                     var thisJob = jobs.objects[ii];
                     events.push({
                       id: ii + 1,
@@ -218,6 +221,9 @@
                         .hover(
                           function(e) {
                             var $this = $(this);
+                            if ($body.width() < 990) {
+                              $this.tooltip('show');
+                            }
                             if ($this.parents('.dimmed').length == 0 && !$.isEmptyObject(skill_hash)) {
                               for (var ii = 0; ii < Object.keys(skill_hash).length; ii++) {
                                 skill_hash[Object.keys(skill_hash)[ii]].addClass('dim');
@@ -233,7 +239,11 @@
                             }
                           },
                           function(e) {
-                            var my_skills = $(this).data('event').skills;
+                            var $this = $(this);
+                            if ($body.width() < 990) {
+                              $this.tooltip('hide');
+                            }
+                            var my_skills = $this.data('event').skills;
                             if (my_skills && !$.isEmptyObject(skill_hash)) {
                               for (var ii = 0; ii < Object.keys(skill_hash).length; ii++) {
                                 skill_hash[Object.keys(skill_hash)[ii]].addClass('dim');

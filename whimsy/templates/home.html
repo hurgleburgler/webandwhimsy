@@ -7,12 +7,11 @@
     <meta http-equiv="Content-Type" content="text/html;charset=utf-8" >
 
     <!-- Le styles -->
-    {% compress css %}
-    <link media="all" rel="stylesheet" type="text/less" href="{{ STATIC_URL }}less/bootstrap.less" />
+    {% compress css inline %}
     <link media="all" rel="stylesheet" type="text/css" href="{{ STATIC_URL }}css/jqcloud.css" />
     <link media="all" rel="stylesheet" type="text/css" href="{{ STATIC_URL }}css/standard.css" />
     <link media="all" rel="stylesheet" type="text/css" href="{{ STATIC_URL }}css/whimsical.timeline.css" />
-    <link media="all" rel="stylesheet" type="text/css" href="{{ STATIC_URL }}css/whimsy.css" />
+    <link media="all" rel="stylesheet" type="text/less" href="{{ STATIC_URL }}less/whimsy.less" />
     <link media="all" rel="stylesheet" type="text/css" href="{{ STATIC_URL }}fonts/style.css" />
     {% endcompress %}
     <link rel="stylesheet" type="text/css" href="{{ STATIC_URL }}css/standard.print.css" media="print" />
@@ -23,9 +22,9 @@
   </head>
 
   <body>
-    <div id="wrap">
+    <div>
       <div class="navbar navbar-default" role="navigation">
-        <div class="container-fluid">
+        <div class="container">
           <div class="navbar-header">
             <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
               <span class="sr-only">Toggle navigation</span>
@@ -38,7 +37,7 @@
           <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
             <ul class="nav navbar-nav">
               <li class="active"><a id="interactive" href="">Interactive</a></li>
-              <li><a id="standard" href="">Standard</a></li>
+              <!--<li><a id="standard" href="">Standard</a></li>-->
               <li class="dropdown">
                 <a href="#" class="dropdown-toggle" data-toggle="dropdown">
                      Contact Me!
@@ -57,7 +56,7 @@
       </div>
 
 
-      <div class="container-fluid">
+      <div class="container">
         <div id="page-contents">
         </div>
       </div>
